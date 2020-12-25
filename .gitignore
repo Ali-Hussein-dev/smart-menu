@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 .history
+ngrok.exe
+
 # testing
 /coverage
 
