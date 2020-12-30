@@ -7,6 +7,18 @@ describe('Price', () => {
   const setVisible = () => {
     visible = !visible
   }
+  test('price matches snapshot', () => {
+    const { container } = render(
+      <Price price={3} visible={visible} setVisible={() => setVisible()} />
+    )
+    expect(container).toMatchSnapshot()
+  })
+  test('price matches textContent', () => {
+    const { container } = render(
+      <Price price={3} visible={visible} setVisible={() => setVisible()} />
+    )
+    expect(container.textContent).toMatch('3.00')
+  })
   test('setVisible should be called', () => {
     const mockSetVisible = jest.fn(setVisible)
     const { container, asFragment, debug } = render(
@@ -17,18 +29,5 @@ describe('Price', () => {
     userEvent.click(screen.getByLabelText('info-3'))
     expect(mockSetVisible).toBeCalled()
     expect(mockSetVisible).toBeCalledWith(true)
-  })
-
-  test('price matches textContent', () => {
-    const { container } = render(
-      <Price price={3} visible={visible} setVisible={() => setVisible()} />
-    )
-    expect(container.textContent).toMatch('3.00')
-  })
-  test('price snapshot', () => {
-    const { container } = render(
-      <Price price={3} visible={visible} setVisible={() => setVisible()} />
-    )
-    expect(container.textContent).toMatchSnapshot()
   })
 })
