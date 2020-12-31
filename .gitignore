@@ -7,7 +7,8 @@
 .history
 # testing
 /coverage
-
+/database
+/public/trude
 # next.js
 /.next/
 /out/
