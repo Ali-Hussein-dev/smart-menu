@@ -1,4 +1,4 @@
-type IconNames =
+export type IconNames =
   | 'burger'
   | 'steak'
   | 'vegan'
