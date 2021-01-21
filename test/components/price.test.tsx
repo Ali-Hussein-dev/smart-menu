@@ -1,33 +1,19 @@
-import userEvent from '@testing-library/user-event'
-import { screen, render } from '@testing-library/react'
-import Price from '../../src/components/Price'
+import { render } from '@testing-library/react'
+import { Price } from '../../src/components/leaf-node'
+const price = {
+  p1: 4.5,
+  p2: 2.5,
+}
+/**
+ *  missing cases
+ * - snapshot: with info button, it requires hook call
+ * - snapshot: prices in Happy Hour
+ * - snapshot: prices with size unit
+ * - user Events: info btn clicked
+ */
 describe('Price', () => {
-  // eslint-disable-next-line prefer-const
-  let visible = false
-  const setVisible = () => {
-    visible = !visible
-  }
   test('price matches snapshot', () => {
-    const { container } = render(
-      <Price price={3} visible={visible} setVisible={() => setVisible()} />
-    )
+    const { container } = render(<Price price={price} />)
     expect(container).toMatchSnapshot()
-  })
-  test('price matches textContent', () => {
-    const { container } = render(
-      <Price price={3} visible={visible} setVisible={() => setVisible()} />
-    )
-    expect(container.textContent).toMatch('3.00')
-  })
-  test('setVisible should be called', () => {
-    const mockSetVisible = jest.fn(setVisible)
-    const { container, asFragment, debug } = render(
-      <Price price={3} visible={visible} setVisible={mockSetVisible} />
-    )
-    asFragment()
-    debug(container)
-    userEvent.click(screen.getByLabelText('info-3'))
-    expect(mockSetVisible).toBeCalled()
-    expect(mockSetVisible).toBeCalledWith(true)
   })
 })
