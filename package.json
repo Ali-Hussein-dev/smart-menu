@@ -1,8 +1,8 @@
 {
-  "name": "prod-boilerplate",
-  "description": "Next.js with TS boilerplate for production",
+  "name": "smart-menu",
+  "description": "Smart Menu for modern gastronomy",
   "author": "Ali Hussein",
-  "license": "MIT",
+  "license": "",
   "version": "1.0.0",
   "scripts": {
     "dev": "next build && next dev",
@@ -31,6 +31,7 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "antd": "^4.9.4",
+    "dayjs": "^1.10.4",
     "framer-motion": "^3.2.1",
     "next": "^10.0.4",
     "react": "^17.0.1",
@@ -67,6 +68,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ali-Hussein-dev/prod-boilerplate"
+    "url": "https://github.com/Ali-Hussein-dev/smart-menu"
   }
 }
