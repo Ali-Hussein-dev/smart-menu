@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrinkItem Coffee addon: matches snapshot 1`] = `
+<div>
+  <div
+    class="mb-3 text-blueGray-600"
+  >
+    <div
+      class="flex justify-between"
+    >
+      <div
+        class="pr-6"
+      >
+        <span
+          class="font-medium text-blueGray-700"
+        >
+          Sojamilch
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+      >
+        <div
+          class="flex items-center justify-center"
+        >
+          <span
+            class="flex flex-col"
+          >
+            <span
+              class="flex justify-center gap-x-1"
+            >
+              <span>
+                0.50
+              </span>
+            </span>
+          </span>
+        </div>
+        <div
+          class="flex flex-col items-center w-full"
+        >
+          <hr
+            aria-orientation="horizontal"
+            class="chakra-divider css-1647zlw"
+            role="separator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DrinkItem cocktail: non-hh time matches snapshot 1`] = `
+<div>
+  <div
+    class="mb-3 text-blueGray-600"
+  >
+    <div
+      class="flex justify-between"
+    >
+      <div
+        class="pr-6"
+      >
+        <span
+          class="font-medium text-blueGray-700"
+        >
+          Raspberry Gimlet
+        </span>
+        <div
+          class="leading-5 break-words cursor-default text-blueGray-400"
+          data-testid="text-expand"
+        >
+          <p
+            class="chakra-text css-16ytai3"
+          >
+            Eigene Infusion aus Himbeere und Gin, mit Limette und Lime
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+      >
+        <div
+          class="flex items-center justify-center"
+        >
+          <span
+            class="flex flex-col"
+          >
+            <span
+              class="flex justify-center gap-x-1"
+            >
+              <span>
+                8.00
+              </span>
+            </span>
+          </span>
+        </div>
+        <div
+          class="flex flex-col items-center w-full"
+        >
+          <hr
+            aria-orientation="horizontal"
+            class="chakra-divider css-1647zlw"
+            role="separator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DrinkItem longdrink: matches snapshot 1`] = `
+<div>
+  <div
+    class="mb-3 text-blueGray-600"
+  >
+    <div
+      class="flex justify-between"
+    >
+      <div
+        class="pr-6"
+      >
+        <span
+          class="font-medium text-blueGray-700"
+        >
+          Campari
+        </span>
+        <div
+          class="leading-5 break-words cursor-default text-blueGray-400"
+          data-testid="text-expand"
+        >
+          <p
+            class="chakra-text css-16ytai3"
+          >
+            Maracuja | Soda | Tonic
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+      >
+        <div
+          class="flex items-center justify-center"
+        >
+          <span
+            class="flex flex-col"
+          >
+            <span
+              class="flex justify-center gap-x-1"
+            >
+              <span>
+                7.80
+              </span>
+            </span>
+          </span>
+        </div>
+        <div
+          class="flex flex-col items-center w-full"
+        >
+          <hr
+            aria-orientation="horizontal"
+            class="chakra-divider css-1647zlw"
+            role="separator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DrinkItem softdrink item matches snapshot 1`] = `
+<div>
+  <div
+    class="mb-3 text-blueGray-600"
+  >
+    <div
+      class="flex justify-between"
+    >
+      <div
+        class="pr-6"
+      >
+        <span
+          class="font-medium text-blueGray-700"
+        >
+          Ananas
+        </span>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+      >
+        <div
+          class="flex items-center justify-center"
+        >
+          <span
+            class="flex flex-col"
+          >
+            <span
+              class="flex justify-center gap-x-1"
+            >
+              <span>
+                3.50
+              </span>
+              <span
+                class="text-blueGray-400"
+              >
+                0.3
+                L
+              </span>
+            </span>
+            <span
+              class="flex justify-center gap-x-1"
+            >
+              <span>
+                4.30
+              </span>
+              <span
+                class="text-blueGray-400"
+              >
+                0.4
+                L
+              </span>
+            </span>
+          </span>
+        </div>
+        <div
+          class="flex flex-col items-center w-full"
+        >
+          <hr
+            aria-orientation="horizontal"
+            class="chakra-divider css-1647zlw"
+            role="separator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
