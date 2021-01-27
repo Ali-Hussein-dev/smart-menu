@@ -14,7 +14,7 @@ export const LongText: React.FC = ({ children }) => {
   return (
     <div
       data-testid="text-expand"
-      className="cursor-default text-blueGray-500"
+      className="leading-5 break-words cursor-default text-blueGray-400"
       onClick={() => handleClick()}
     >
       <Text noOfLines={lines}>{children}</Text>

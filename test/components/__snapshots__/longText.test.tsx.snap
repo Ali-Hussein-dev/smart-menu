@@ -3,7 +3,7 @@
 exports[`LongText LongText matches snapshot 1`] = `
 <div>
   <div
-    class="cursor-default text-blueGray-500"
+    class="leading-5 break-words cursor-default text-blueGray-400"
     data-testid="text-expand"
   >
     <p
