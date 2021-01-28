@@ -1,17 +1,18 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { render } from '@testing-library/react'
-// import { ThemeProvider } from "my-ui-lib"
+import { ChakraProvider } from '@chakra-ui/react'
 // import { TranslationProvider } from "my-i18n-lib"
 // import defaultStrings from "i18n/en-x-default"
 
 const Providers = ({ children }) => {
-  return children
-  // return (
-  //   <ThemeProvider theme="light">
-  //     <TranslationProvider messages={defaultStrings}>
-  //       {children}
-  //     </TranslationProvider>
-  //   </ThemeProvider>
-  // )
+  // return children
+  return (
+    <ChakraProvider>
+      {/* <TranslationProvider messages={defaultStrings}> */}
+      {children}
+      {/* </TranslationProvider> */}
+    </ChakraProvider>
+  )
 }
 
 const customRender = (ui, options = {}) =>
