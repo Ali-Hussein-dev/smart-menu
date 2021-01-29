@@ -181,7 +181,7 @@ export const GetDishes: React.FC<{
         </svg>
       )
     default:
-      null
+      return null
   }
 }
 export const GetMenuType: React.FC<{ iconName: IconNames }> = ({
@@ -228,9 +228,8 @@ export const GetMenuType: React.FC<{ iconName: IconNames }> = ({
           />
         </svg>
       )
-      break
     default:
-      null
+      return null
   }
 }
 
@@ -244,5 +243,9 @@ export const SvgIcon: React.FC<{ size?: string; color?: string }> = ({
   //--------------------------------------
   // functions
   //--------------------------------------
-  return <div className={`fill-current ${size} ${color}`}>{children}</div>
+  return (
+    <div data-testid={'svg-icon'} className={`fill-current ${size} ${color}`}>
+      {children}
+    </div>
+  )
 }
