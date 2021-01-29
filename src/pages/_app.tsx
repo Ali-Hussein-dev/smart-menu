@@ -11,9 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <title>Smart Gastkarte</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div>
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
