@@ -8,36 +8,54 @@ import {
 } from '../../src/components/leaf-node'
 
 describe('SVG Icon', () => {
-  it('dishes menu matches snapshot', () => {
-    const { container } = render(
+  test.each`
+    iconName    | expectedResults
+    ${'drinks'} | ${'svg-icon'}
+    ${'dishes'} | ${'svg-icon'}
+  `(`$iconName`, ({ iconName }) => {
+    render(
       <SvgIcon>
-        <GetMenuType iconName="dishes" />
+        <GetMenuType iconName={iconName} />
       </SvgIcon>
     )
-    expect(container).toMatchSnapshot()
   })
-  it('drinks menu matches snapshot', () => {
-    const { container } = render(
+  test.each`
+    iconName           | expectedResults
+    ${'dressing'}      | ${'svg-icon'}
+    ${'burger'}        | ${'svg-icon'}
+    ${'steak'}         | ${'svg-icon'}
+    ${'vegan'}         | ${'svg-icon'}
+    ${'kleinigkeiten'} | ${'svg-icon'}
+    ${'salat'}         | ${'svg-icon'}
+    ${'eis'}           | ${'svg-icon'}
+    ${'flammkuchen'}   | ${'svg-icon'}
+    ${'kinder'}        | ${'svg-icon'}
+    ${'klassik'}       | ${'svg-icon'}
+    ${'desserts'}      | ${'svg-icon'}
+  `(`$iconName`, ({ iconName }) => {
+    render(
       <SvgIcon>
-        <GetMenuType iconName={'drinks'} />
+        <GetDishes iconName={iconName} />
       </SvgIcon>
     )
-    expect(container).toMatchSnapshot()
   })
-  it('burger icon matches snapshot', () => {
-    const { container } = render(
+  test.each`
+    iconName        | expectedResults
+    ${'softdrinks'} | ${'svg-icon'}
+    ${'beer'}       | ${'svg-icon'}
+    ${'wine'}       | ${'svg-icon'}
+    ${'hardLiquor'} | ${'svg-icon'}
+    ${'shot glass'} | ${'svg-icon'}
+    ${'juice'}      | ${'svg-icon'}
+    ${'tea'}        | ${'svg-icon'}
+    ${'coffee'}     | ${'svg-icon'}
+    ${'cocktail'}   | ${'svg-icon'}
+    ${'longdrink'}  | ${'svg-icon'}
+  `(`$iconName`, ({ iconName }) => {
+    render(
       <SvgIcon>
-        <GetDishes iconName={'burger'} />
+        <GetDrinks iconName={iconName} />
       </SvgIcon>
     )
-    expect(container).toMatchSnapshot()
-  })
-  it('softdrinks icon matches snapshot', () => {
-    const { container } = render(
-      <SvgIcon>
-        <GetDrinks iconName={'softdrinks'} />
-      </SvgIcon>
-    )
-    expect(container).toMatchSnapshot()
   })
 })
