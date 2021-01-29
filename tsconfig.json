@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "@/components/*": ["src/components/*"],
-      "@/database/*": ["database/*"]
+      "@/database/*": ["database/*"],
+      "testUtils": ["test/testUtils"]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -25,6 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "/types/main.d.ts"
+    "/types/main.d.ts",
+    "./jest-setup.ts"
   ]
 }
