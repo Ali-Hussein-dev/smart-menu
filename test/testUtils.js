@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { render } from '@testing-library/react'
 import { ChakraProvider } from '@chakra-ui/react'
-import { Ctx } from 'src/context'
+import { Ctx, reducer } from 'src/context'
 import MegaList from '../database'
 import * as React from 'react'
 // import { TranslationProvider } from "my-i18n-lib"
 // import defaultStrings from "i18n/en-x-default"
 const Providers = ({ children }) => {
-  // return children
+  const [state, dispatch] = React.useReducer(reducer, MegaList[0])
   return (
     <ChakraProvider>
       {/* <TranslationProvider messages={defaultStrings}> */}
-      <Ctx.Provider value={{ state: MegaList[0] }}>{children}</Ctx.Provider>
+      <Ctx.Provider value={{ state, dispatch }}>{children}</Ctx.Provider>
       {/* </TranslationProvider> */}
     </ChakraProvider>
   )
