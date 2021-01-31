@@ -6,11 +6,14 @@ import {
   HStack,
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-import { GetDrinks, SvgIcon } from '../leaf-node'
+import { GetDrinks, LoadIndicator, SvgIcon } from '../leaf-node'
 import DrinkItem from './DrinkItem'
 import * as React from 'react'
 
-const CocktailPanel = dynamic(() => import('./CocktailPanel'), { ssr: false })
+const DynamicPanel = dynamic(() => import('./DynamicPanel'), {
+  ssr: false,
+  loading: () => <LoadIndicator />,
+})
 
 interface DrinksProps {
   drinks: [Menu.Header, Menu.List<Menu.Item>][]
@@ -42,7 +45,7 @@ const DrinksAccordion: React.FC<DrinksProps> = ({ drinks: list }) => {
               </HStack>
             </AccordionButton>
             <AccordionPanel>
-              <CocktailPanel>
+              <DynamicPanel>
                 {o[1].list.map((arr, i) => (
                   <div key={i}>
                     {arr[0]?.header && (
@@ -72,7 +75,7 @@ const DrinksAccordion: React.FC<DrinksProps> = ({ drinks: list }) => {
                     ) : null}
                   </div>
                 ))}
-              </CocktailPanel>
+              </DynamicPanel>
             </AccordionPanel>
           </AccordionItem>
         ))}
