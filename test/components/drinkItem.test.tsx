@@ -37,7 +37,7 @@ describe('DrinkItem', () => {
   test('Coffee addon: matches snapshot', () => {
     const { container } = render(
       <Ctx.Provider value={{ state: MegaList[0] }}>
-        <DrinkItem item={coffeeAddonItem} hasHH />
+        <DrinkItem item={coffeeAddonItem} />
       </Ctx.Provider>
     )
     expect(container).toMatchSnapshot()
