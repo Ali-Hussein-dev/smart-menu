@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
+@layer components {
+  .addon-list {
+    @apply px-2 pt-5 pb-2 text-orange-600 rounded-lg shadow bg-amber-50;
+  }
+}
 @tailwind utilities;

@@ -9,7 +9,8 @@ ngrok.exe
 
 # testing
 /coverage
-
+/database
+/public/trude
 # next.js
 /.next/
 /out/
@@ -34,3 +35,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+ngrok.exe

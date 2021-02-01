@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price Is info button visible 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+  >
+    <div
+      class="flex items-center justify-center"
+    >
+      <span
+        class="flex flex-col"
+      >
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            9.50
+          </span>
+        </span>
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            12.50
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      class="flex flex-col items-center w-full"
+    >
+      <button
+        aria-label="item-info"
+        class="pb-1"
+        role="button"
+      >
+        <svg
+          class="text-blue-300 "
+          fill="currentColor"
+          height="15"
+          stroke="currentColor"
+          stroke-width="0"
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 4.75c0-0.412 0.338-0.75 0.75-0.75h0.5c0.412 0 0.75 0.338 0.75 0.75v0.5c0 0.412-0.338 0.75-0.75 0.75h-0.5c-0.412 0-0.75-0.338-0.75-0.75v-0.5z"
+          />
+          <path
+            d="M10 12h-4v-1h1v-3h-1v-1h3v4h1z"
+          />
+          <path
+            d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 14.5c-3.59 0-6.5-2.91-6.5-6.5s2.91-6.5 6.5-6.5 6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5z"
+          />
+        </svg>
+      </button>
+      <hr
+        aria-orientation="horizontal"
+        class="chakra-divider css-1647zlw"
+        role="separator"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Price Is price visible 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+  >
+    <div
+      class="flex items-center justify-center"
+    >
+      <span
+        class="flex flex-col"
+      >
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            9.50
+          </span>
+        </span>
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            12.50
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      class="flex flex-col items-center w-full"
+    >
+      <hr
+        aria-orientation="horizontal"
+        class="chakra-divider css-1647zlw"
+        role="separator"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Price Is price visible with size & units 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center justify-between ml-1 text-blueGray-600"
+  >
+    <div
+      class="flex items-center justify-center"
+    >
+      <span
+        class="flex flex-col"
+      >
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            9.50
+          </span>
+          <span
+            class="text-blueGray-400"
+          >
+            0.3
+            L
+          </span>
+        </span>
+        <span
+          class="flex justify-center gap-x-1"
+        >
+          <span>
+            12.50
+          </span>
+          <span
+            class="text-blueGray-400"
+          >
+            0.5
+            L
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      class="flex flex-col items-center w-full"
+    >
+      <hr
+        aria-orientation="horizontal"
+        class="chakra-divider css-1647zlw"
+        role="separator"
+      />
+    </div>
+  </div>
+</div>
+`;

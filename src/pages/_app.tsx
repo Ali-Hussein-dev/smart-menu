@@ -1,11 +1,17 @@
-import App from 'next/app'
+import { AppProps } from 'next/app'
+import { ChakraProvider } from '@chakra-ui/react'
 import '../css/global.css'
+import Head from 'next/head'
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export default function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <ChakraProvider>
+      <Head>
+        <title>Smart Gastkarte</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
-
-export default MyApp

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LongText LongText matches snapshot 1`] = `
+<div>
+  <div
+    class="leading-5 break-words cursor-default text-blueGray-400"
+    data-testid="text-expand"
+  >
+    <p
+      class="chakra-text css-r4i3pr"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto dolorem veritatis, sapiente modi possimus aspernatur doloremque eveniet autem ipsum necessitatibus eius voluptatibus accusantium aperiam officia perspiciatis amet est dolorum iste. Facere dolorem maiores asperiores.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`LongText text should be collapsed when second time clicked 1`] = `[Function]`;
+
+exports[`LongText text should be expanded when clicked 1`] = `[Function]`;

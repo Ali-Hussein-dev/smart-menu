@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Eva Dark Bold",
+  "workbench.colorTheme": "Community Material Theme Palenight",
   "workbench.colorCustomizations": {
     "terminal.name": "BlueBerryPie",
     "terminal.black": "#0a4c62",
@@ -19,6 +19,14 @@
     "terminal.brightCyan": "#5e6071",
     "terminal.brightWhite": "#0a6c7e",
     "terminal.background": "#1c0c28",
-    "terminal.foreground": "#babab9"
-  }
+    "terminal.foreground": "#babab9",
+    "statusBar.background": "#79bcb3",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#57aba0",
+    "titleBar.activeBackground": "#79bcb3",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#79bcb399",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#79bcb3"
 }

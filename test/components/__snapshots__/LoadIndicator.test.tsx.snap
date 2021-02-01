@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadIndicator matches snapshot 1`] = `
+<div>
+  <div
+    class="css-150w1ld"
+  >
+    <div
+      class="chakra-spinner css-18lw4io"
+    >
+      <span
+        class="css-f8n5zr"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>
+</div>
+`;
