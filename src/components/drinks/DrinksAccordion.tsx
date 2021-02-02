@@ -6,9 +6,11 @@ import {
   HStack,
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-import { GetDrinks, LoadIndicator, SvgIcon } from '../leaf-node'
+import { GetDrinks, LoadIndicator, SliderChildren, SvgIcon } from '../leaf-node'
 import DrinkItem from './DrinkItem'
 import * as React from 'react'
+import SlidersContainer from './SlidersContainer'
+import { SwiperSlide } from 'swiper/react'
 
 const DynamicPanel = dynamic(() => import('./DynamicPanel'), {
   ssr: false,
@@ -53,14 +55,32 @@ const DrinksAccordion: React.FC<DrinksProps> = ({ drinks: list }) => {
                         {arr[0].header}
                       </h3>
                     )}
-                    {arr[1].itemsList.map((oo, ii) => (
-                      <DrinkItem
-                        key={ii}
-                        item={oo}
-                        sizeUnit={arr[0]?.sizeUnit}
-                        hasHH={arr[0]?.hasHH}
-                      />
-                    ))}
+                    {arr[0]?.isSliders ? (
+                      <SlidersContainer>
+                        {arr[1].itemsList.map((oo, ii) => (
+                          <SwiperSlide key={ii}>
+                            <SliderChildren imgSrc={oo.imgSrc}>
+                              <DrinkItem
+                                item={oo}
+                                sizeUnit={arr[0]?.sizeUnit}
+                                hasHH={arr[0]?.hasHH}
+                              />
+                            </SliderChildren>
+                          </SwiperSlide>
+                        ))}
+                      </SlidersContainer>
+                    ) : (
+                      <div>
+                        {arr[1].itemsList.map((oo, ii) => (
+                          <DrinkItem
+                            key={ii}
+                            item={oo}
+                            sizeUnit={arr[0]?.sizeUnit}
+                            hasHH={arr[0]?.hasHH}
+                          />
+                        ))}
+                      </div>
+                    )}
                     {arr[1].addon ? (
                       <div className="addon-list">
                         <h4 className="mb-3 font-semibold">

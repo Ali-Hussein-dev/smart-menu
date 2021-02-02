@@ -6,3 +6,8 @@
   }
 }
 @tailwind utilities;
+:root {
+  --swiper-pagination-color: lightblue;
+  --swiper-navigation-color: white;
+  --swiper-navigation-size: 6px;
+}

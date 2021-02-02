@@ -66,7 +66,7 @@ const MenuPage: React.FC = () => {
           {/* <link rel="icon" href="/favicon.ico" /> */}
         </Head>
         <div className="w-full md:w-7/12 lg:w-6/12">
-          <div className="sticky top-0 flex justify-end w-full h-12 px-1 py-1 mb-4 bg-white shadow text-blueGray-600">
+          <div className="sticky top-0 z-50 flex justify-end w-full h-12 px-1 py-1 mb-4 bg-white shadow text-blueGray-600">
             <ToggleMenu
               name={typeof query.name === 'string' ? query.name : 'noname'}
               label={query.menu === 'dishes' ? 'drinks' : 'dishes'}
