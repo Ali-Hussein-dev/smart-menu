@@ -82,6 +82,7 @@ declare namespace Menu {
     origin?: string
     brandAbout?: string
     about?: string
+    isSliders?: boolean
   }
   //-------------------------------
   interface ItemsList<T = Item> {

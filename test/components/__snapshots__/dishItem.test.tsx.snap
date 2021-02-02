@@ -49,11 +49,11 @@ exports[`DishItem matches snapshot 1`] = `
         class="leading-5 break-words cursor-default text-blueGray-400"
         data-testid="text-expand"
       >
-        <p
+        <div
           class="chakra-text css-16ytai3"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem similique ipsam debitis nobis alias quasi molestias expedita! Eos, totam nostrum!
-        </p>
+        </div>
       </div>
       <span
         class="flex items-center gap-x-1 text-blueGray-500"

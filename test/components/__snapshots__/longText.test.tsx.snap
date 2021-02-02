@@ -6,11 +6,11 @@ exports[`LongText LongText matches snapshot 1`] = `
     class="leading-5 break-words cursor-default text-blueGray-400"
     data-testid="text-expand"
   >
-    <p
+    <div
       class="chakra-text css-r4i3pr"
     >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto dolorem veritatis, sapiente modi possimus aspernatur doloremque eveniet autem ipsum necessitatibus eius voluptatibus accusantium aperiam officia perspiciatis amet est dolorum iste. Facere dolorem maiores asperiores.
-    </p>
+    </div>
   </div>
 </div>
 `;

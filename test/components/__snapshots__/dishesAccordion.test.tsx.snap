@@ -2,6 +2,27 @@
 
 exports[`DishesAccordion matches snapshot 1`] = `
 <div>
+  <section
+    class="text-blueGray-600"
+  >
+    <div
+      class="flex flex-col pl-2 mb-2 gap-y-2"
+    >
+      <h2
+        class="font-bold text-center"
+      >
+        Mittagessen
+      </h2>
+    </div>
+    <div
+      class="px-2"
+    >
+      <img
+        class="w-full mx-auto mb-4 object-fill rounded-lg"
+        src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-salmon-with-sweet-soy-sauce-in-a-korean-restaurant.jpg"
+      />
+    </div>
+  </section>
   <div
     class="chakra-accordion css-0"
   >
@@ -69,11 +90,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Mexikanischer Hackfleisch-Bohneneintopf mit Sauerrahm und frischem Brot
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -151,11 +172,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Pommes frites von der Süßkartoffel mit hausgemachter Trüffelmayonnaise
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -261,11 +282,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Mexikanischer Soja-Bohneneintopf mit frischem Brot
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -343,11 +364,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Pommes frites mit herzhafter Käsesauce und knusprig gebratenen Baconwürfeln vom Strohschwein
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -425,11 +446,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Pommes frites mit pikantem Chili con Carne, Jalapeños und leckerer Cheddarsauce
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -535,11 +556,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Creme aus Algen und Kichererbsen mit frischer Paprika, roten Zwiebeln, Mais und knusprigen Kartoffelchips auf geröstetem Weißbrot mit Gurken Tomaten und Eisbergsalat dazu Pommes Frite
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -617,11 +638,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     vom Rinderfilet, mariniert mit Trüffelöl, Rauke Salat, Ciprianisauce und frischen Hobel von Italienischem Hartkäse 
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -748,11 +769,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Bunte Blattsalate mit Tomate, Gurke, Möhre, Chicorée und frischen Kräutern
-                  </p>
+                  </div>
                 </div>
                 <span
                   class="flex items-center gap-x-1 text-blueGray-500"
@@ -860,11 +881,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Bunte Blattsalate mit Tomate, Gurke, Paprika, frischen Kräutern und gebackenen Flammkuchenchips
-                  </p>
+                  </div>
                 </div>
                 <span
                   class="flex items-center gap-x-1 text-blueGray-500"
@@ -972,11 +993,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Knackiger Römersalat und Kirschtomaten in einem mit feinen Kräutern und zerstoßenem Pfeffer  mit Croûtons und Parmesanspänen
-                  </p>
+                  </div>
                 </div>
                 <span
                   class="flex items-center gap-x-1 text-blueGray-500"
@@ -1084,11 +1105,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Frischer Rucola und saftige Honigmelone mit mariniertem Hirtenkäse
-                  </p>
+                  </div>
                 </div>
                 <span
                   class="flex items-center gap-x-1 text-blueGray-500"
@@ -1224,11 +1245,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Bunte Blattsalate, Apfelchips, Walnüsse, Cashewkerne, Croûtons mit Möhren und Kirschtomaten
-                  </p>
+                  </div>
                 </div>
                 <span
                   class="flex items-center gap-x-1 text-blueGray-500"
@@ -1502,11 +1523,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Wurst aus 100% Bio-Schweinefleisch, nach hauseigenen Rezeptvorgaben hergestellt. Mit roter Sauce, frischem Karotten Krautsalat und Pommes frites
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -1584,11 +1605,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     in Nussbutter gebraten, an Zitrone mit warmem Speckkartoffelsalat und frischem Cole Slaw
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -1666,11 +1687,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit hausgemachter Kräuterbutter und Pommes frites
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -1776,11 +1797,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Penne mit gebratenen Champignons und Kräuterseitlingen in veganer Trüffel-Sahne mit jungem Lauch und frischen Kräutern
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -1886,11 +1907,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Penne mit glacierten Trauben und grünem Spargel in Walnuss-Chili-Pesto Wahlweise mit feinen Scheiben vom Holsteinischen Schinken +1,50€
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -1996,11 +2017,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Lauwarme Pasta in einer leichten Ba lsamicovinaigrette mit frischem Rucola, roten Zwiebeln, Kirschtomaten, gerösteten Walnüssen und getrockneten Cranberries
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2078,11 +2099,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     (Gefangen nach der MSC- Richtlinie) auf knusprigen Bratkartoffeln mit Zwiebeln, in körniger Dijon-Senfsauce 
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2188,11 +2209,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Sellerieschnitzel gefüllt mit veganem Käse auf knusprigen Bratkartoffeln mit Zwiebeln und jungem Lauch
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2270,11 +2291,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Kotelettrippchen in unserer unverwechselbaren fein rauchigen BBQ-Sauce mariniert und schonend gegart mit frischem Cole Slaw und Pommes Frites 
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2407,11 +2428,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce und Cole Slaw
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2489,11 +2510,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce und Cole Slaw
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2571,11 +2592,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Saftiges Black Angus-Weiderind in einem Brioche-Burgerbrötchen mit Eisbergsalat, Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce. Als Krönung mit Süßkartoffel Fries und Trüffelmayonnaise verfeinert. (Die Süßkartoffel Fries sind auf dem Burger!)
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2653,11 +2674,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit gegrillter Hähnchenbrust vom Kikok aus dem Paderborner Land Hähnchenbrust in knuspriger Panade mit leckerer Cheddarsauce und Jalapeños in einem Sesambrötchen mit Eisbergsalat, eingelegter Gurke, Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2763,11 +2784,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Beyond Meat Patty mit veganem Käse und unserer fein rauchigen BBQ-Sauce im veganen Hamburgerbrötchen mit feurigen Jalapeños frischen Tomaten, eingelegter Gurke, roten Zwiebeln und Eisbergsalat
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2873,11 +2894,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Gemüsebratling aus Quinoa und Kidneybohnen mit unsererfein-rauchigen BBQ-Sauce im veganen Hamburger-Brötchen mit feurigen Jalapeños,frischer Tomate, eingelegter Gurke, roten Zwiebeln und Eisbergsalat
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -2955,11 +2976,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Beilage zum Burger
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3037,11 +3058,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Beilage zum Burger
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3425,7 +3446,7 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   />
                 </div>
@@ -3505,11 +3526,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Der Klassiker, geschnitten aus dem Roastbeef. Eine gleichmäßige Marmorierung macht es zu einem hoch aromatischen und saftigen Stück Fleisch. Unsere Schlemmer-Steaks servieren wir Ihnen mit einer Backkartoffel, Kräuterschmand und hausgemachter Kräuterbutter.
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3639,11 +3660,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit magerem Speckvom Strohschwein und Zwiebeln auf Sauerrahm
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3721,11 +3742,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit gegrillten Rumpsteak-Würfeln vom Weiderind, Mais, Paprika, herzhaftem Käse und Barbecue-Sauce auf Tomatenpüree
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3831,11 +3852,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Champignons und Kräuterseitlingen, jungem Lauch, Tomaten und Trüffelmayonnaise auf Tomatenpüree
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3913,11 +3934,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     zarter grüner Spargel und knackiger Brokkoli mit Käse und leckererSauce überbacken auf Sauerrahm – Wahlweise mit magerem Speck vom Strohschwein (+ 1€ Aufpreis)
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -3995,11 +4016,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Zwiebeln, magerem Speckvom Strohschwein und leckerem Käse gratiniert auf Sauerrahm
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4077,11 +4098,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Hamburgerfleisch vom deutschen Weiderind mit Tomaten, Zwiebeln und leckerem Käse2auf Tomatensauce, nach dem Backen mit eingelegten Gurken und unserer unverwechselbaren Burgersauce garniert
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4159,11 +4180,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Ziegenkäse, Tomaten, Kräutern, Rucolasalat und Blütenhonig auf Sauerrahm
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4299,11 +4320,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Pasta mit Ketchup und geriebenem Käse
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4381,11 +4402,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Kleine gegrillte Hähnchenbrust vom Kikok aus dem Paderborner Land mit Pommes frites
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4463,11 +4484,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Unser Deluxe Hamburger als Miniversion für unsere kleinen Gäste mit Pommes frites
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4597,11 +4618,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Vanillesauce
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4679,11 +4700,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Nuss-Nougatcreme, Haselnusskrokant und Mandeln auf Vanilleschmand Halbe Portion 5,50€
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4761,11 +4782,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Original Oreo Kekse auf süßem Vanilleschmand mit gesalzenen Erdnüssen und mildem Mozzarella überbacken. Auf den ersten Blick mag die Kombination von süß und salzig verrückt erscheinen. Schmeckt aber total lecker. Entdeckt auf kulinarischen Reise in Queens, New York bei Krave It!  Halbe Portion 5,50€
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -4871,11 +4892,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     mit Vanilleeis Wahlweise mit veganem Mango-Fruchteis
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5008,11 +5029,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Vanilleeis (2 Kugeln), Orangensaft und frische Minze
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5090,11 +5111,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Vanilleeis (3 Kugeln), Apfelkompott, Zimt, Sahne und ein Schuss Eierlikör
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5172,11 +5193,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Joghurteis, Erdbeereis, Vanilleeis, Naturjoghurt, Sahne und MüsliJoghurteis, Erdbeereis, Vanilleeis, Naturjoghurt, Sahne und Müsli
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5254,11 +5275,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Haselnusseis, Walnusseis, Vanilleeis, Nusskrokant, Sahne und ein Schuss Baileys
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5336,11 +5357,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Vanilleeis (2 Kugeln), aromatisierter Kaffee, Sahne und Borkenschokolade
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5418,11 +5439,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Schokoladeneis, Haselnusseis, Vanilleeis, Sahne, Schokoladensauce und Borkenschokolade
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5500,11 +5521,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Frische Ananas, Kokosnusseis, Joghurteis, Vanilleeis, Sahne, garniert mit Erdbeersauce und Kokosstreuseln
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5582,11 +5603,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Vanilleeis (1 Kugel), Sahne, Smarties, Hörnchenwaffel und Schokoladenstreusel
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5664,11 +5685,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Vanilleeis, Schokoladeneis, Haselnusseis, Walnusseis, Erdbeereis, Joghurteis, Kokosnusseis
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5746,11 +5767,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Schokosauce, Erdbeersauce, Müsli, Apfelkompott, Borkenschokolade, Joghurt, Krokant, Smarties, Hörnchenwaffel
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5828,11 +5849,11 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   >
                     Eierlikör, Baileys, frische Ananas
-                  </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -5910,7 +5931,7 @@ exports[`DishesAccordion matches snapshot 1`] = `
                   class="leading-5 break-words cursor-default text-blueGray-400"
                   data-testid="text-expand"
                 >
-                  <p
+                  <div
                     class="chakra-text css-16ytai3"
                   />
                 </div>

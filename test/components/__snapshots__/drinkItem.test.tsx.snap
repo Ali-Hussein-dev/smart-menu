@@ -70,11 +70,11 @@ exports[`DrinkItem cocktail: non-hh time matches snapshot 1`] = `
           class="leading-5 break-words cursor-default text-blueGray-400"
           data-testid="text-expand"
         >
-          <p
+          <div
             class="chakra-text css-16ytai3"
           >
             Eigene Infusion aus Himbeere und Gin, mit Limette und Lime
-          </p>
+          </div>
         </div>
       </div>
       <div
@@ -130,11 +130,11 @@ exports[`DrinkItem longdrink: matches snapshot 1`] = `
           class="leading-5 break-words cursor-default text-blueGray-400"
           data-testid="text-expand"
         >
-          <p
+          <div
             class="chakra-text css-16ytai3"
           >
             Maracuja | Soda | Tonic
-          </p>
+          </div>
         </div>
       </div>
       <div
