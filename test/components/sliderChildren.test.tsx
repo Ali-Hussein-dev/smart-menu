@@ -1,10 +1,9 @@
 import { SliderChildren } from '@/components/leaf-node'
-import { screen } from '@testing-library/dom'
 import * as React from 'react'
-import { render } from '../testUtils'
+import { render, screen } from '../testUtils'
 import userEvent from '@testing-library/user-event'
 
-const Children = () => (
+export const Children: React.FC = () => (
   <div data-testid="children">
     <h2>Hidden children</h2>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste at
