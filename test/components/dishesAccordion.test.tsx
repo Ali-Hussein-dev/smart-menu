@@ -9,10 +9,6 @@ beforeAll(async () => {
 const list = MegaList[0].menu.de.dishes.dishes
 
 describe('DishesAccordion', () => {
-  test('matches snapshot', () => {
-    const { container } = render(<DishesAccordion dishes={list} />)
-    expect(container).toMatchSnapshot()
-  })
   test('to have a header content', () => {
     const { container } = render(<DishesAccordion dishes={list} />)
     expect(container).toHaveTextContent('Klassik')
