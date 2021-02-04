@@ -9,7 +9,7 @@ describe('Slider Contanier', () => {
   let toggleInfo, children
 
   test('expect... when...', () => {
-    const { container, debug } = render(
+    render(
       <SlidersContainer>
         <SliderChildren>
           <Children />
@@ -25,6 +25,5 @@ describe('Slider Contanier', () => {
     userEvent.click(toggleInfo)
     children = screen.queryByTestId('children')
     expect(children).toBe(null)
-    debug(container)
   })
 })
