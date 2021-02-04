@@ -1,13 +1,17 @@
 import dayjs from 'dayjs'
 
+const validateTime = (time: number): Error | void => {
+  if (time > 1440 || time < 0) {
+    throw new Error('Time must be between 0-1440')
+  }
+}
+
 export const withinTimeRange = (
   currentTime: number,
   startTime: number,
   endTime: number
 ): boolean => {
-  if (currentTime > 1440 || currentTime < 0) {
-    throw new Error('currentTime must be between 0-1440')
-  }
+  validateTime(currentTime)
   // Edge case: when endTime is less than startTime ex. 22:00-00:30
   if (startTime > endTime) {
     if (currentTime >= startTime && currentTime <= 1440) {
@@ -21,6 +25,7 @@ export const withinTimeRange = (
     return true
   } else return false
 }
+
 export const convertNumToTimeFormat = (
   a: number,
   b: 'HH' | 'mm'
@@ -42,3 +47,58 @@ export const concatenateHrsMin = (hrs: number, min: number): string => {
     'mm'
   )}`
 }
+
+/**
+ * case minus
+ *  sub-case: diff is less than 10 => run every min
+ *  sub-case: diff is greater than 10 => run every hour
+ * case positive
+ *
+ * case HH: start, end
+ *
+ */
+/**
+ * determine intervals,
+ * when to clean setInterval
+ *
+ */
+
+export const timeListener = (
+  currentTime: number,
+  targetTime: number,
+  interval?: number
+): number => {
+  const diffTime = targetTime - currentTime
+  if (diffTime < 15 && diffTime > -15) {
+    // setInterval run every 1min
+    return interval || 6
+  } else if (diffTime < 60) {
+    // setInterval run every 10min
+    return interval || 600
+  } else {
+    // setInterval run every 1hour
+    return interval || 6000
+  }
+}
+
+export const withTimeRangeForDishes = (
+  currentTime: number,
+  startTime: number,
+  endTime?: number
+): boolean => {
+  validateTime(currentTime)
+  if (!endTime) {
+    if (currentTime < startTime) {
+      return false
+    } else if (currentTime >= startTime) {
+      return true
+    }
+  } else {
+    if (currentTime < startTime || currentTime >= endTime) {
+      return false
+    } else if (currentTime >= startTime && currentTime <= endTime) {
+      return true
+    }
+  }
+}
+// console.log(withTimeRangeForDishes(1040, 660, 1050))

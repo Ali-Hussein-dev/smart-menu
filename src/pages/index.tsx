@@ -6,9 +6,7 @@ export const Home = (): JSX.Element => (
       <title>Smart Gastkarte | HomePage</title>
       {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
-    <main>
-      HomePage
-    </main>
+    <main>HomePage</main>
   </div>
 )
 

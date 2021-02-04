@@ -16,11 +16,10 @@ const RestaurantsIndex: React.FC = () => {
           className="flex items-center w-10/12 px-5 py-3 rounded-lg shadow-lg md:w-8/12 gap-x-4 bg-blueGray-50"
           key={o.name}
         >
-          <Avatar src={o.meta.imgSrc} name={o.name} size="xl"/>
+          <Avatar src={o.meta.imgSrc} name={o.name} size="xl" />
           <Link href={`/restaurants/${o.name}`}>
             <a>{o.name}</a>
           </Link>
-          
         </div>
       ))}
     </div>

@@ -7,7 +7,6 @@ import * as React from 'react'
 /**
  * ?note:
  * do not expect Drawer to be in the dom because it is rendered by DisheItem, price is just send an event
- * 
  */
 
 describe('Price', () => {
