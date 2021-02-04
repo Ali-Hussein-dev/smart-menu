@@ -94,7 +94,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          { header: '',imgSrc: '/trude/salat.jpg' },
           {
             itemsList: [
               {
@@ -163,7 +163,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          { header: '', imgSrc: '/trude/currywurst.jpg' },
           {
             itemsList: [
               {
@@ -296,7 +296,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          { header: '', imgSrc: '/trude/burger.jpg' },
           {
             itemsList: [
               {
@@ -455,7 +455,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          { header: '', imgSrc: '/trude/flammkuchen.jpg' },
           {
             itemsList: [
               {

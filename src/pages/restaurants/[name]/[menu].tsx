@@ -4,7 +4,11 @@ import dynamic from 'next/dynamic'
 import MegaList from '@/database/index'
 import { Ctx, reducer } from '../../../context'
 import Link from 'next/link'
-import { GetMenuType, LoadIndicator, SvgIcon } from '@/components/leaf-node'
+import {
+  GetMenuType,
+  LoadIndicator,
+  SvgIcon,
+} from '@/components/leaf-node'
 import Head from 'next/head'
 import CocktailWrapper from '@/components/drinks/CocktailWrapper'
 import dayjs from 'dayjs'

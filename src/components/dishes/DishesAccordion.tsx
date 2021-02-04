@@ -3,10 +3,9 @@ import {
   AccordionItem,
   AccordionPanel,
   AccordionButton,
-  HStack,
 } from '@chakra-ui/react'
 import { DishItem } from './'
-import { GetDishes, Price, SvgIcon } from '../leaf-node'
+import { CC, GetDishes, MenuTop, Price } from '../leaf-node'
 import * as React from 'react'
 import { Lunch } from './Lunch'
 import dayjs from 'dayjs'
@@ -29,32 +28,32 @@ const DishesAccordion: React.FC<{
               _focus={{ bg: 'gray.400', outline: 'none' }}
               _expanded={{ bg: 'gray.200', boxShadow: 'md' }}
             >
-              <HStack spacing={o[0].iconName && '10px'}>
-                {o[0].iconName && (
-                  <SvgIcon color="text-orange-700">
-                    <GetDishes iconName={o[0].iconName} />
-                  </SvgIcon>
-                )}
-                <h2 className="font-bold text-left text-md text-blueGray-600">
-                  {o[0].header}
-                </h2>
-              </HStack>
+              <CC isTrue={o[0].iconName}>
+                <MenuTop
+                  header={o[0].header}
+                  Component={<GetDishes iconName={o[0].iconName} />}
+                />
+              </CC>
             </AccordionButton>
             <AccordionPanel>
               {o[1].list.map((arr, i) => (
                 <div key={i}>
-                  {arr[0]?.header && (
+                  <CC isTrue={arr[0]?.header}>
                     <h3 className="mb-5 font-semibold text-center">
                       {arr[0].header}
                     </h3>
-                  )}
+                  </CC>
+                  <MenuTop
+                    header={arr[0].header}
+                    assest={{ imgSrc: arr[0].imgSrc }}
+                  />
                   {arr[1].itemsList.map((oo, ii) => (
                     <DishItem key={ii} item={oo} />
                   ))}
-                  {arr[1].addon ? (
+                  <CC isTrue={arr[1].addon}>
                     <div className="addon-list">
                       <h4 className="mb-3 font-semibold">
-                        {arr[1].addon.header}
+                        {arr[1].addon?.header}
                       </h4>
                       {arr[1].addon?.addonList.map((ooo, iii) => (
                         <div
@@ -66,7 +65,7 @@ const DishesAccordion: React.FC<{
                         </div>
                       ))}
                     </div>
-                  ) : null}
+                  </CC>
                 </div>
               ))}
             </AccordionPanel>
