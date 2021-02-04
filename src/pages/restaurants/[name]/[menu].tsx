@@ -60,7 +60,7 @@ const MenuPage: React.FC = () => {
   //--------------------------------------
   return (
     <Ctx.Provider value={{ state, dispatch }}>
-      <main className="relative flex items-start justify-center w-full min-h-screen ">
+      <main className="relative flex items-start justify-center w-full min-h-screen text-blueGray-700">
         <Head>
           <title>{query.menu?.toString().toUpperCase()}</title>
           {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -73,6 +73,9 @@ const MenuPage: React.FC = () => {
             />
           </div>
           <div className="w-full font-mono tracking-tighter shadow-lg ">
+            <h1 className="mb-2 text-xl font-black tracking-normal text-center uppercase">
+              {query.menu === 'dishes' ? dishes.name : drinks.name}
+            </h1>
             {query.menu === 'dishes' ? (
               <DishesAccordion dishes={dishes.dishes} />
             ) : (

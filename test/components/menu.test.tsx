@@ -23,4 +23,8 @@ describe('Menu page: drinks', () => {
     const { container } = render(<MenuPage />)
     expect(container).toHaveTextContent('Softdrinks')
   })
+  test('Expect menu header: barkarte', async () => {
+    const { container } =render(<MenuPage />)
+    expect(container).toHaveTextContent(/barkarte/i)
+  })
 })
