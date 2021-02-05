@@ -9,6 +9,8 @@ export const tea: [Menu.Header, Menu.List<Tea>] = [
       [
         {
           header: '',
+          imgSrc:
+            'https://www.twinings.co.uk/app_/responsive/TwiningsUKI/media/content/About-Tea/shutterstock_126275183.jpg?w=1260',
         },
         {
           itemsList: [
@@ -98,7 +100,8 @@ export const coffee: [Menu.Header, Menu.List] = [
       [
         {
           header: '',
-          imgSrc: '/trude/mulli.jpg',
+          imgSrc:
+            'https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg',
         },
         {
           itemsList: [

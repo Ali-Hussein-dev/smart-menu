@@ -2,18 +2,22 @@ interface DishItemO extends Menu.Item, Menu.DishItem {}
 const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
   [
     {
-      header: 'Kleinigkeiten für Zwischendurch',
+      header: 'Kleinigkeiten',
       imgSrc: '',
       iconName: 'kleinigkeiten',
     },
     {
       list: [
         [
-          { header: '' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2017/11/26/19/40/nachos-2979802_1280.jpg',
+          },
           {
             itemsList: [
               {
-                name: 'Chili con Carne vom Galloway Rind',
+                name: 'Chili con Carne',
                 description:
                   'Mexikanischer Hackfleisch-Bohneneintopf mit Sauerrahm und frischem Brot',
 
@@ -90,11 +94,19 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     },
   ],
   [
-    { header: 'Buntes aus der Schüssel', imgSrc: '', iconName: 'salat' },
+    {
+      header: 'Buntes aus der Schüssel',
+      imgSrc: '',
+      iconName: 'salat',
+    },
     {
       list: [
         [
-          { header: '',imgSrc: '/trude/salat.jpg' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+          },
           {
             itemsList: [
               {
@@ -159,22 +171,30 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     },
   ],
   [
-    { header: 'Klassik', imgSrc: '', iconName: 'klassik' },
+    {
+      header: 'Klassik',
+
+      iconName: 'klassik',
+    },
     {
       list: [
         [
-          { header: '', imgSrc: '/trude/currywurst.jpg' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2017/01/09/20/23/pasta-salad-1967501_1280.jpg',
+          },
           {
             itemsList: [
               {
-                name: 'T.R.U.D.E.s Currywurst ',
+                name: 'Currywurst ',
                 description:
                   'Wurst aus 100% Bio-Schweinefleisch, nach hauseigenen Rezeptvorgaben hergestellt. Mit roter Sauce, frischem Karotten Krautsalat und Pommes frites',
                 size: { s1: 200 },
                 price: { p1: 12.5 },
               },
               {
-                name: 'Großes Schnitzel vom Strohschwein „Wiener Art“',
+                name: 'Großes Schnitzel',
                 description:
                   'in Nussbutter gebraten, an Zitrone mit warmem Speckkartoffelsalat und frischem Cole Slaw',
                 price: { p1: 14.5 },
@@ -289,30 +309,34 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
   ],
   [
     {
-      header: 'Der Hamburger in der T.R.U.D.E',
+      header: 'Der Hamburger',
       imgSrc: '',
       iconName: 'burger',
     },
     {
       list: [
         [
-          { header: '', imgSrc: '/trude/burger.jpg' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2021/01/06/10/11/burger-5893927_1280.jpg',
+          },
           {
             itemsList: [
               {
                 name:
-                  'T.R.U.D.E.s Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
+                  'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
                 description:
-                  'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce und Cole Slaw',
+                  'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und Spezial-Burgersauce und Cole Slaw',
                 price: { p1: 120 },
                 meatSource: 'vom Schleswig-Holstein',
                 size: { s1: 200 },
               },
               {
                 name:
-                  'T.R.U.D.E.s Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
+                  'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
                 description:
-                  'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce und Cole Slaw',
+                  'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und Spezial-Burgersauce und Cole Slaw',
                 price: { p1: 15 },
                 meatSource: 'vom Schleswig-Holstein',
                 size: { s1: 120 },
@@ -320,7 +344,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
               {
                 name: 'Deluxe Trüffel Burger',
                 description:
-                  'Saftiges Black Angus-Weiderind in einem Brioche-Burgerbrötchen mit Eisbergsalat, Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce. Als Krönung mit Süßkartoffel Fries und Trüffelmayonnaise verfeinert. (Die Süßkartoffel Fries sind auf dem Burger!)',
+                  'Saftiges Black Angus-Weiderind in einem Brioche-Burgerbrötchen mit Eisbergsalat, Tomate, roten Zwiebeln und Spezial-Burgersauce. Als Krönung mit Süßkartoffel Fries und Trüffelmayonnaise verfeinert. (Die Süßkartoffel Fries sind auf dem Burger!)',
                 price: { p1: 18.5 },
                 // MeatType: 'Rind',
                 meatSource: 'vom Schleswig-Holstein',
@@ -328,7 +352,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
               {
                 name: 'Crunchy Chicken Burger Hot and Cheesy',
                 description:
-                  'mit gegrillter Hähnchenbrust vom Kikok aus dem Paderborner Land Hähnchenbrust in knuspriger Panade mit leckerer Cheddarsauce und Jalapeños in einem Sesambrötchen mit Eisbergsalat, eingelegter Gurke, Tomate, roten Zwiebeln und T.R.U.D.E.s Spezial-Burgersauce',
+                  'mit gegrillter Hähnchenbrust vom Kikok aus dem Paderborner Land Hähnchenbrust in knuspriger Panade mit leckerer Cheddarsauce und Jalapeños in einem Sesambrötchen mit Eisbergsalat, eingelegter Gurke, Tomate, roten Zwiebeln und Spezial-Burgersauce',
                 price: { p1: 14 },
                 // MeatType: 'Hähnchen',
                 meatSource: 'vom Kikok aus dem Paderborner Land',
@@ -422,11 +446,15 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     },
   ],
   [
-    { header: 'T.R.U.D.E.s Schlemmer-Steaks', imgSrc: '', iconName: 'steak' },
+    { header: 'Steaks', imgSrc: '', iconName: 'steak' },
     {
       list: [
         [
-          { header: '' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2016/03/05/20/06/abstract-1238655_1280.jpg',
+          },
           {
             itemsList: [
               {
@@ -455,7 +483,11 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '', imgSrc: '/trude/flammkuchen.jpg' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2016/03/01/11/36/tarte-flambee-1230126_1280.jpg',
+          },
           {
             itemsList: [
               {
@@ -517,7 +549,11 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2016/02/11/20/06/baker-1194428_1280.jpg',
+          },
           {
             itemsList: [
               {
@@ -548,7 +584,11 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2016/10/13/11/44/chocolates-1737503_1280.jpg',
+          },
           {
             itemsList: [
               {
@@ -591,7 +631,11 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     {
       list: [
         [
-          { header: '' },
+          {
+            header: '',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2017/10/02/14/53/ice-cream-2809036_1280.jpg',
+          },
           {
             itemsList: [
               {

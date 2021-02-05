@@ -5,11 +5,12 @@ export const softdrinks: [Menu.Header, Menu.List] = [
   },
   {
     list: [
-      // softdrinks
       [
         {
           header: '',
           sizeUnit: 'L',
+          imgSrc:
+            'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zentrum-der-gesundheit.de%2Fnews%2Fernaehrung%2Fsoftdrinks-lassen-schneller-altern-100010&psig=AOvVaw3MlphasHgxbkXLw-ghgEq6&ust=1612647270300000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCFprjZ0-4CFQAAAAAdAAAAABAD',
         },
         {
           itemsList: [
@@ -77,7 +78,12 @@ export const softdrinks: [Menu.Header, Menu.List] = [
         },
       ],
       [
-        { header: 'Thomas Henry', sizeUnit: 'L' },
+        {
+          header: 'Thomas Henry',
+          sizeUnit: 'L',
+          imgSrc:
+            'https://d3r6kbofdnmd8.cloudfront.net/media/catalog/category/3/593_thomas_henry.jpg',
+        },
         {
           itemsList: [
             {
@@ -101,7 +107,8 @@ export const softdrinks: [Menu.Header, Menu.List] = [
       [
         {
           header: 'fritz-kola',
-          imgSrc: '/trude/fritz-kola.jpg',
+          imgSrc:
+            'https://amp.wuv.de/var/wuv/storage/images/werben_verkaufen/marketing/fritz_kola_bringt_cola_mit_null_zucker_heraus/9864447-3-ger-DE/fritz_kola_bringt_cola_mit_null_zucker_heraus3_gross.jpg',
           sizeUnit: 'L',
         },
         {
@@ -140,7 +147,8 @@ export const softdrinks: [Menu.Header, Menu.List] = [
         {
           header: 'Voelkel BioZisch',
           sizeUnit: 'L',
-          imgSrc: '/trude/voelkel.jpg',
+          imgSrc:
+            'https://www.consciouslifestyleofmine.com/wp-content/uploads/2020/07/BioZisch-Sirup-von-Voelkel-7.jpg',
         },
         {
           itemsList: [
@@ -362,7 +370,7 @@ export const juice: [Menu.Header, Menu.List] = [
         {
           header: 'Magnus Imperial Mineralwasser',
           subHeader: 'Heimisches Mineralwasser aus dem Alstertal',
-          imgSrc: '/trude/wasser.jpg',
+          imgSrc: '',
         },
         {
           itemsList: [

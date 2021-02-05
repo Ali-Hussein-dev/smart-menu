@@ -3,6 +3,8 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     {
       header: 'Special Drinks',
       subHeader: 'mit hausgemachten Infusionen',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2017/01/11/11/02/cocktail-1971488_1280.jpg',
     },
     {
       list: [
@@ -10,7 +12,8 @@ export const cocktail: [Menu.Header, Menu.List][] = [
           {
             header: '',
             hasHH: true,
-            imgSrc: '/trude/specialDrinks.jpg',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2017/01/11/11/02/cocktail-1971488_1280.jpg',
           },
           {
             itemsList: [
@@ -50,14 +53,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Fancy Drink' },
+    {
+      header: 'Fancy Drink',
+      imgSrc:
+        'https://vgywm.com/wp-content/uploads/2019/07/bay-breeze_white11.png',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
-            imgSrc: '/trude/fancyDrinks.jpg',
+            imgSrc:
+              'https://vgywm.com/wp-content/uploads/2019/07/bay-breeze_white11.png',
           },
           {
             itemsList: [
@@ -243,11 +251,20 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Caipirinhas & Friends' },
+    {
+      header: 'Caipirinhas & Friends',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2016/07/22/20/52/cold-drink-1535766_1280.jpg',
+    },
     {
       list: [
         [
-          { imgSrc: '/trude/mojito.jpg', header: '', hasHH: true },
+          {
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2016/07/22/20/52/cold-drink-1535766_1280.jpg',
+            header: '',
+            hasHH: true,
+          },
           {
             itemsList: [
               {
@@ -319,13 +336,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Coladas & Friends' },
+    {
+      header: 'Coladas & Friends',
+      imgSrc:
+        'https://images.unsplash.com/photo-1578664182263-c20a65fa927b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'https://images.unsplash.com/photo-1578664182263-c20a65fa927b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80',
           },
           {
             itemsList: [
@@ -415,13 +438,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Frozen Daiquiris' },
+    {
+      header: 'Frozen Daiquiris',
+      imgSrc:
+        'https://www.homemadefoodjunkie.com/wp-content/uploads/2019/07/coco-cabana-daiquiri-garnished.jpg',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'https://www.homemadefoodjunkie.com/wp-content/uploads/2019/07/coco-cabana-daiquiri-garnished.jpg',
           },
           {
             itemsList: [
@@ -464,13 +493,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Daiquiri' },
+    {
+      header: 'Daiquiri',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2020/07/05/23/06/daiquiri-5374800_1280.jpg',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2020/07/05/23/06/daiquiri-5374800_1280.jpg',
           },
           {
             itemsList: [
@@ -517,13 +552,18 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Margarita' },
+    {
+      header: 'Margarita',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2018/03/18/18/54/drink-3237895_1280.jpg',
+    },
     {
       list: [
         [
           {
             header: '',
-            imgSrc: '/trude/margarita.jpg',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2018/03/18/18/54/drink-3237895_1280.jpg',
             hasHH: true,
           },
           {
@@ -568,11 +608,20 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Frozen Margarita' },
+    {
+      header: 'Frozen Margarita',
+      imgSrc:
+        'https://www.liquor.com/thmb/VaxT36mtuFQaZYKNRkmTVyl1fo4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__07__05150949__Frozen-Margarita-720x720-recipe-59566ae60c504508906963b1de69ad25.jpg',
+    },
     {
       list: [
         [
-          { header: '', hasHH: true },
+          {
+            header: '',
+            hasHH: true,
+            imgSrc:
+              'https://www.liquor.com/thmb/VaxT36mtuFQaZYKNRkmTVyl1fo4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__07__05150949__Frozen-Margarita-720x720-recipe-59566ae60c504508906963b1de69ad25.jpg',
+          },
           {
             itemsList: [
               {
@@ -596,13 +645,16 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     {
       header: 'Mocktails',
       subHeader: 'ohne Alkoho',
+      imgSrc:
+        'https://images.unsplash.com/photo-1498772776855-2248a3e740f3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80',
     },
     {
       list: [
         [
           {
             header: '',
-            imgSrc: '/trude/mocktail.jpg',
+            imgSrc:
+              'https://images.unsplash.com/photo-1498772776855-2248a3e740f3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80',
             hasHH: true,
           },
           {
@@ -724,13 +776,16 @@ export const cocktail: [Menu.Header, Menu.List][] = [
   [
     {
       header: 'Classic',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2019/06/22/01/16/white-russian-4290606_1280.jpg',
     },
     {
       list: [
         [
           {
             header: '',
-            imgSrc: '/trude/classics.jpg',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2019/06/22/01/16/white-russian-4290606_1280.jpg',
             hasHH: true,
           },
           {
@@ -820,13 +875,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Sour' },
+    {
+      header: 'Sour',
+      imgSrc:
+        'https://images.unsplash.com/photo-1602160431533-5350a6967e85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1634&q=80',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'https://images.unsplash.com/photo-1602160431533-5350a6967e85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1634&q=80',
           },
           {
             itemsList: [
@@ -869,13 +930,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Aperitif' },
+    {
+      header: 'Aperitif',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2015/02/21/16/17/whisky-644372_1280.jpg',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2015/02/21/16/17/whisky-644372_1280.jpg',
           },
           {
             itemsList: [
@@ -919,13 +986,19 @@ export const cocktail: [Menu.Header, Menu.List][] = [
     },
   ],
   [
-    { header: 'Digestif' },
+    {
+      header: 'Digestif',
+      imgSrc:
+        'http://pintglass.co.uk/wp-content/uploads/2017/05/80180_large.jpg',
+    },
     {
       list: [
         [
           {
             header: '',
             hasHH: true,
+            imgSrc:
+              'http://pintglass.co.uk/wp-content/uploads/2017/05/80180_large.jpg',
           },
           {
             itemsList: [
@@ -964,13 +1037,16 @@ export const cocktail: [Menu.Header, Menu.List][] = [
   [
     {
       header: 'shots',
+      imgSrc:
+        'https://cdn.pixabay.com/photo/2019/03/04/22/34/lit-whiskey-shot-4035278_1280.jpg',
     },
     {
       list: [
         [
           {
             header: '',
-            imgSrc: '/trude/shots.jpg',
+            imgSrc:
+              'https://cdn.pixabay.com/photo/2019/03/04/22/34/lit-whiskey-shot-4035278_1280.jpg',
             sizeUnit: 'cl',
           },
           {
