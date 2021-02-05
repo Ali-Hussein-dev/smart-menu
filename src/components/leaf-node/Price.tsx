@@ -8,14 +8,18 @@ const ToFixed: React.FC<{
   unit?: Menu.SizeUnit
   size?: number
   isHH?: boolean
-}> = ({ num, unit, size, isHH = false }) => (
+  currency?: "€" | "$"
+}> = ({ num, unit, size, isHH = false, currency = '€' }) => (
   <span className="flex justify-center gap-x-1">
     {typeof num === 'number' && isHH ? (
       <span className="text-sm line-through text-blueGray-400">
         {num.toFixed(2)}
       </span>
     ) : (
-      <span>{typeof num === 'number' && num.toFixed(2)}</span>
+      <span>
+        {typeof num === 'number' && num.toFixed(2)}
+        <span className="pl-1 text-blueGray-500">{currency}</span>
+      </span>
     )}
     {(size || unit) && (
       <span className="text-blueGray-400">
