@@ -13,20 +13,18 @@ export const SliderChildren: React.FC<{ imgSrc?: string; alt?: string }> = ({
   // functions
   //--------------------------------------
   return (
-    <div className="mb-2">
+    <div className="">
       <div className="relative">
         {imgSrc && (
-          <img src={imgSrc} alt={alt} className="mx-auto rounded-lg" />
+          <img src={imgSrc} alt={alt} className="mx-auto mt-3 rounded-lg" />
         )}
         <button
           onClick={() => setIsOpen(!isOpen)}
           role="button"
           aria-label="toggle-info"
-          className={`absolute z-10 ${
-            isOpen ? 'text-blueGray-600' : 'text-white'
-          } transform focus:outline-none bottom-2 right-4 active:scale-90`}
+          className={`absolute z-10 transform focus:outline-none bottom-2 right-4 active:scale-90`}
         >
-          <ImInfo size="25" />
+          <ImInfo size="25"className="text-orange-800" />
         </button>
         {isOpen && (
           <div className="absolute bottom-0 w-full px-2 py-4 bg-white opacity-95">

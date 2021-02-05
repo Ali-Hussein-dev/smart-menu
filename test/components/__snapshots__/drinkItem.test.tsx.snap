@@ -31,6 +31,11 @@ exports[`DrinkItem Coffee addon: matches snapshot 1`] = `
             >
               <span>
                 0.50
+                <span
+                  class="pl-1 text-blueGray-500"
+                >
+                  €
+                </span>
               </span>
             </span>
           </span>
@@ -91,6 +96,11 @@ exports[`DrinkItem cocktail: non-hh time matches snapshot 1`] = `
             >
               <span>
                 8.00
+                <span
+                  class="pl-1 text-blueGray-500"
+                >
+                  €
+                </span>
               </span>
             </span>
           </span>
@@ -151,6 +161,11 @@ exports[`DrinkItem longdrink: matches snapshot 1`] = `
             >
               <span>
                 7.80
+                <span
+                  class="pl-1 text-blueGray-500"
+                >
+                  €
+                </span>
               </span>
             </span>
           </span>
@@ -249,6 +264,11 @@ exports[`DrinkItem softdrink item matches snapshot 1`] = `
             >
               <span>
                 3.50
+                <span
+                  class="pl-1 text-blueGray-500"
+                >
+                  €
+                </span>
               </span>
               <span
                 class="text-blueGray-400"
@@ -262,6 +282,11 @@ exports[`DrinkItem softdrink item matches snapshot 1`] = `
             >
               <span>
                 4.30
+                <span
+                  class="pl-1 text-blueGray-500"
+                >
+                  €
+                </span>
               </span>
               <span
                 class="text-blueGray-400"

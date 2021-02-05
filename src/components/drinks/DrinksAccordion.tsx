@@ -49,7 +49,7 @@ const DrinksAccordion: React.FC<DrinksProps> = ({ drinks: list }) => {
               {!o[0].iconName && (
                 <MenuTop
                   header={o[0].header}
-                  assest={{ avatarSrc: '/trude/mojito.jpg' }}
+                  assest={{ avatarSrc: o[0].imgSrc }}
                 />
               )}
             </AccordionButton>

@@ -100,6 +100,11 @@ exports[`DishItem matches snapshot 1`] = `
           >
             <span>
               30.00
+              <span
+                class="pl-1 text-blueGray-500"
+              >
+                €
+              </span>
             </span>
           </span>
         </span>

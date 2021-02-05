@@ -47,14 +47,14 @@ export const MenuTop: React.FC<{
     )
   }
   return (
-    <HStack spacing={'16px'}>
+    <HStack spacing={'8px'}>
       <CC isTrue={Component}>
         <SvgIcon color="text-orange-700">{Component}</SvgIcon>
       </CC>
       <CC isTrue={assest.avatarSrc}>
         <Avatar src={assest.avatarSrc} />
       </CC>
-      <H className="font-semibold text-center text-blueGray-600">{header}</H>
+      <H className="text-sm font-semibold break-all text-blueGray-600">{header}</H>
     </HStack>
   )
 }
