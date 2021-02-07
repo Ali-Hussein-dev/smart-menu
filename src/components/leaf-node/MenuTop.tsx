@@ -52,7 +52,7 @@ export const MenuTop: React.FC<{
         <SvgIcon color="text-orange-700">{Component}</SvgIcon>
       </CC>
       <CC isTrue={assest.avatarSrc}>
-        <Avatar src={assest.avatarSrc} />
+        <Avatar src={assest.avatarSrc} name="Cocktail" />
       </CC>
       <H className="text-sm font-semibold break-all text-blueGray-600">{header}</H>
     </HStack>

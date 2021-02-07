@@ -33,8 +33,8 @@ const CocktailWrapper: React.FC<{ currentTime?: number }> = ({
   // functions
   //--------------------------------------
   return (
-    <div className="pb-4 mb-8 ">
-      <div className="flex items-center justify-center w-10/12 px-4 py-4 mx-auto my-4 text-lg text-center rounded-lg shadow-lg dow-lg sm:w-7/12 text-blueGray-600 gap-x-5">
+    <div className="pb-4">
+      <div className="flex items-center justify-center w-11/12 px-4 py-4 mx-auto my-4 text-lg text-center border rounded-lg border-blueGray-300 text-blueGray-600 gap-x-5">
         <SvgIcon color="text-orange-700" size="w-20">
           <GetDrinks iconName={'cocktail'} />
         </SvgIcon>
@@ -62,7 +62,7 @@ const CocktailWrapper: React.FC<{ currentTime?: number }> = ({
           {children}
         </div>
       ) : (
-        <div className="w-10/12 px-2 py-4 mx-auto mt-4 text-lg font-semibold text-center text-gray-500 border rounded-lg border-blueGray-300 sm:w-7/12">
+        <div className="w-11/12 px-2 py-4 mx-auto mt-4 text-lg font-semibold text-center text-gray-500 border rounded-lg border-blueGray-300">
           <ImInfo size="25" className="mx-auto mb-2 text-amber-700" />
           <h3 data-testid="cocktailMsg">
             {state.meta.timeRanges.cocktail.cocktailOffMsg}
