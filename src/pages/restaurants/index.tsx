@@ -9,18 +9,15 @@ const RestaurantsIndex: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <div className="flex flex-col items-center min-h-screen pt-4 text-3xl bg-blueGray-200 text-blueGray-700">
-      <h1 className="mb-5">Restaurants Liste</h1>
+    <div className="flex flex-col items-center h-screen pt-4 text-2xl text-blueGray-700">
+      <h1 className="mb-5 font-bold text-blue-400">Restaurants Liste</h1>
       {MegaList.map((o) => (
-        <div
-          className="flex items-center w-10/12 px-5 py-3 rounded-lg shadow-lg md:w-8/12 gap-x-4 bg-blueGray-50"
-          key={o.name}
-        >
-          <Avatar src={o.meta.imgSrc} name={o.name} size="xl" />
-          <Link href={`/restaurants/${o.name}`}>
+        <Link key={o.name} href={`/restaurants/${o.name}`}>
+          <button className="flex items-center w-11/12 px-5 py-1 mb-3 text-lg border rounded-lg md:w-8/12 bg-blueGray-50 gap-x-4 hover:shadow focus:outline-none" role="button" aria-label="restaurant-page">
+            <Avatar src={o.meta.imgSrc} name={o.name} size="lg" />
             <a>{o.name}</a>
-          </Link>
-        </div>
+          </button>
+        </Link>
       ))}
     </div>
   )

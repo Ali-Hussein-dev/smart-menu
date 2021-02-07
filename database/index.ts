@@ -4,9 +4,10 @@ import drinks from './drinks'
 
 const MegaList: Menu.MegaObj[] = [
   {
-    name: 'TRUDE',
+    name: 'T.R.U.D.E',
     meta: {
-      imgSrc: '/trude/trude_logo.jpg',
+      imgSrc:
+        '/trude/trude_logo.jpg',
       isHH: false,
       isLunch: true,
       isCocktailAvailable: false,
