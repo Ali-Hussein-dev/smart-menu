@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest --passWithNoTests",
-    "test-all": "npx npm-run-all -p type-check lint test"
+    "test-all": "npm-run-all -p type-check lint test"
   },
   "husky": {
     "hooks": {
@@ -23,19 +23,22 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "npm run test-all"
+      "npm run lint",
+      "npm run test"
     ]
   },
   "dependencies": {
     "@chakra-ui/react": "^1.1.5",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
+    "@lottiefiles/react-lottie-player": "^3.0.0",
     "dayjs": "^1.10.4",
     "framer-motion": "^3.2.1",
     "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
+    "react-lottie": "^1.2.3",
     "sass": "^1.32.5",
     "swiper": "^6.4.10"
   },

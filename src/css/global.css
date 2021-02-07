@@ -4,6 +4,15 @@
   .addon-list {
     @apply px-2 pt-5 pb-2 text-orange-600 rounded-lg shadow bg-amber-50;
   }
+  .p-btn {
+    @apply px-8 py-2 text-lg font-semibold transform bg-blue-400 rounded-lg text-blueGray-50 active:scale-90 hover:shadow-lg;
+  }
+  .f-col {
+    @apply flex flex-col items-center;
+  }
+  .f-row {
+    @apply flex items-center;
+  }
 }
 @tailwind utilities;
 :root {
