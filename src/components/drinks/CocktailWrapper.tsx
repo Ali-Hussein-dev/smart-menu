@@ -49,18 +49,18 @@ const CocktailWrapper: React.FC = ({ children }) => {
         <SvgIcon color="text-orange-700" size="w-20">
           <GetDrinks iconName={'cocktail'} />
         </SvgIcon>
-        <div>
+        <div className="font-medium">
           <h3 className="text-xl font-black">HAPPY HOUR</h3>
           <div>
             <span>
-              {concatenateHrsMin(hh1.longStart.hrs, hh1.longStart.min)}-
-              {concatenateHrsMin(hh1.longEnd.hrs, hh1.longEnd.min)}
+              {concatenateHrsMin(hh1.longStart)}-
+              {concatenateHrsMin(hh1.longEnd)}
             </span>
           </div>
           <div>
             <span>
-              {concatenateHrsMin(hh2.longStart.hrs, hh2.longStart.min)}-
-              {concatenateHrsMin(hh2.longEnd.hrs, hh2.longEnd.min)}
+              {concatenateHrsMin(hh2.longStart)}-
+              {concatenateHrsMin(hh2.longEnd)}
             </span>
           </div>
         </div>
