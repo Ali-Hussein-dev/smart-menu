@@ -42,7 +42,9 @@ export const convertNumToTimeFormat = (
     : new Error('Params are Invalid')
 }
 //--------------------------------------3
-export const concatenateHrsMin = (hrs: number, min: number): string => {
+
+export const concatenateHrsMin = (time: Menu.Hour): string => {
+  const { hrs, min } = time
   return `${convertNumToTimeFormat(hrs, 'HH')}:${convertNumToTimeFormat(
     min,
     'mm'
