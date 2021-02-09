@@ -75,7 +75,7 @@ const MenuPage: React.FC = () => {
               {query.menu === 'dishes' ? dishes.name : drinks.name}
             </h1>
             {query.menu === 'dishes' ? (
-              <DishesAccordion dishes={dishes.dishes} />
+              <DishesAccordion dishes={dishes} />
             ) : (
               <div>
                 <DrinksAccordion drinks={drinks.drinks} />

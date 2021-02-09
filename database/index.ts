@@ -8,7 +8,7 @@ const MegaList: Menu.MegaObj[] = [
     meta: {
       imgSrc: '/trude/trude_logo.jpg',
       isHH: false,
-      isLunch: true,
+      isLunch: false,
       isCocktailAvailable: false,
       timeRanges: {
         lunch: {
