@@ -8,7 +8,7 @@ import { Children } from './sliderChildren.test'
 describe('Slider Contanier', () => {
   let toggleInfo, children
 
-  test('expect... when...', () => {
+  test('Expect mock slider children to be visble WHEN info btn is toggled', () => {
     render(
       <SlidersContainer>
         <SliderChildren>
@@ -21,9 +21,5 @@ describe('Slider Contanier', () => {
     userEvent.click(toggleInfo)
     children = screen.queryByTestId('children')
     expect(children).toBeVisible()
-    // -----Click event to hidden content
-    userEvent.click(toggleInfo)
-    children = screen.queryByTestId('children')
-    expect(children).toBe(null)
   })
 })

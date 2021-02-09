@@ -136,6 +136,7 @@ declare namespace Menu {
         dishes: {
           name: string
           dishes: [Header, List<Menu.Item>][]
+          lunch: Menu.Item[]
         }
       }
       en: {
@@ -147,6 +148,7 @@ declare namespace Menu {
         dishes: {
           name: string
           dishes: [Header, List<Item>][] | undefined
+          lunch: Menu.Item[]
         }
       }
     }

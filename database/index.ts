@@ -1,4 +1,4 @@
-import dishes from './dishes/dishes'
+import dishes, { lunch } from './dishes/dishes'
 import { cocktail } from './drinks/cocktail'
 import drinks from './drinks'
 
@@ -52,6 +52,7 @@ const MegaList: Menu.MegaObj[] = [
         dishes: {
           name: 'Küchekarte',
           dishes,
+          lunch,
         },
       },
       en: {
@@ -60,7 +61,7 @@ const MegaList: Menu.MegaObj[] = [
           drinks: undefined,
           cocktail: undefined,
         },
-        dishes: { name: 'Dishes Menu', dishes: undefined },
+        dishes: { name: 'Dishes Menu', dishes: undefined, lunch },
       },
     },
   },

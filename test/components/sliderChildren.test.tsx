@@ -1,3 +1,6 @@
+/**
+ * can't test user-event toggling due to inner logic "hooks"
+ */
 import { SliderChildren } from '@/components/leaf-node'
 import * as React from 'react'
 import { render, screen } from '../testUtils'
@@ -14,7 +17,7 @@ describe('SliderChildren', () => {
   let toggleInfo, children
   test('Expect toggle-info to be visible & children is hidden', () => {
     render(
-      <SliderChildren>
+      <SliderChildren isInfoOpen={false}>
         <Children />
       </SliderChildren>
     )
@@ -25,18 +28,15 @@ describe('SliderChildren', () => {
   })
   test('Expect children to be visible | hidden WHEN toggle-info is clicked', () => {
     render(
-      <SliderChildren>
+      <SliderChildren isInfoOpen={false}>
         <Children />
       </SliderChildren>
     )
     toggleInfo = screen.getByLabelText(/toggle-info/i)
     // -----Click event to display content
+    expect(children).toBe(null)
     userEvent.click(toggleInfo)
     children = screen.queryByTestId('children')
     expect(children).toBeVisible()
-    // -----Click event to hidden content
-    userEvent.click(toggleInfo)
-    children = screen.queryByTestId('children')
-    expect(children).toBe(null)
   })
 })

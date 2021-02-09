@@ -324,8 +324,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
           {
             itemsList: [
               {
-                name:
-                  'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
+                name: 'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
                 description:
                   'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und Spezial-Burgersauce und Cole Slaw',
                 price: { p1: 120 },
@@ -333,8 +332,7 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
                 size: { s1: 200 },
               },
               {
-                name:
-                  'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
+                name: 'Deluxe-Hamburger mit saftigem Black Angus-Weiderind',
                 description:
                   'Den Hamburger servieren wir Ihnen in einem selbstgebackenen Sesambrötchen aus unserer Backstube mit Eisbergsalat, eingelegter Gurke Tomate, roten Zwiebeln und Spezial-Burgersauce und Cole Slaw',
                 price: { p1: 15 },
@@ -715,5 +713,20 @@ const dishes: [Menu.Header, Menu.List<DishItemO>][] = [
     },
   ],
 ]
-
+export const lunch = [
+  {
+    name: 'Gebratne Lachs',
+    description: 'Gebratne Lachs mit süße Sojasauce und leckerem Beilagesalat',
+    price: { p1: 8.9 },
+    imgSrc:
+      'https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-salmon-with-sweet-soy-sauce-in-a-korean-restaurant.jpg',
+  },
+  {
+    name: 'Hähnchen Spieße',
+    description: 'Hähnchen Spieße mit Kochbananen',
+    price: { p1: 10.9 },
+    imgSrc:
+      'https://www.foodiesfeed.com/wp-content/uploads/2015/08/paleo-chicken-skewers-with-plantains-768x512.jpg',
+  },
+]
 export default dishes
