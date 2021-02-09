@@ -46,6 +46,8 @@ export const hardLiquor: [Menu.Header, Menu.List] = [
           about:
             'Von lateinisch Juniperus: Vacholder, zumeist farblose spirituose mit unterschiedlich stark ausgeprägter Vacholdernote, durch Aromatisierung oder Mazeration mit zahlreichen zusätzlichen Aromen wie etwa Orangen und Zitronenschale, Kardamom, oder Rosmarin verfeinert',
           sizeUnit: 'cl',
+          imgSrc:
+            'https://assets.punchdrink.com/wp-content/uploads/2018/06/Article-Ultimate-Best-Gin-and-Tonic-Cocktail-Recipe.jpg',
         },
         {
           itemsList: [
@@ -144,6 +146,8 @@ export const hardLiquor: [Menu.Header, Menu.List] = [
         {
           header: 'Whisk(e)y',
           sizeUnit: 'cl',
+          imgSrc:
+            'https://www.thespruceeats.com/thmb/mADz_5VJYf5sm44qZKkrQTBc04U=/4000x3000/smart/filters:no_upscale()/basic-styles-of-whiskey-759256_final3-8441fb5a484d4f2192254834ac403a81.jpg',
         },
         {
           itemsList: [
@@ -394,6 +398,8 @@ export const hardLiquor: [Menu.Header, Menu.List] = [
         {
           header: 'Rum',
           sizeUnit: 'cl',
+          imgSrc:
+            'https://i1.wp.com/cocktailwonk.com/wp-content/uploads/2019/10/x75A3526_moderately-aged_horiz-2.jpg?fit=1200%2C800&ssl=1',
         },
         {
           itemsList: [
@@ -660,7 +666,11 @@ export const longdrinks: [Menu.Header, Menu.List] = [
   {
     list: [
       [
-        { imgSrc: '', header: 'Special Longdrinks/ Higballs' },
+        {
+          header: 'Special Longdrinks/ Higballs',
+          imgSrc:
+            'https://wodkablog.de/wp-content/uploads/wodka-longdrink-800x532.jpg',
+        },
         {
           itemsList: [
             {
