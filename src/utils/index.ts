@@ -1,3 +1,4 @@
+export * from './customHooks'
 import dayjs from 'dayjs'
 
 const validateTime = (time: number): Error | void => {
@@ -5,7 +6,7 @@ const validateTime = (time: number): Error | void => {
     throw new Error('Time must be between 0-1440')
   }
 }
-
+//--------------------------------------1
 export const withinTimeRange = (
   currentTime: number,
   startTime: number,
@@ -25,7 +26,7 @@ export const withinTimeRange = (
     return true
   } else return false
 }
-
+//--------------------------------------2
 export const convertNumToTimeFormat = (
   a: number,
   b: 'HH' | 'mm'
@@ -40,7 +41,7 @@ export const convertNumToTimeFormat = (
     ? dayjs().hour(a).format('HH')
     : new Error('Params are Invalid')
 }
-
+//--------------------------------------3
 export const concatenateHrsMin = (hrs: number, min: number): string => {
   return `${convertNumToTimeFormat(hrs, 'HH')}:${convertNumToTimeFormat(
     min,
@@ -49,38 +50,30 @@ export const concatenateHrsMin = (hrs: number, min: number): string => {
 }
 
 /**
- * case minus
- *  sub-case: diff is less than 10 => run every min
- *  sub-case: diff is greater than 10 => run every hour
- * case positive
+ * Time listener for
+ * toggling cocktail, lunch, hh, dish items
  *
- * case HH: start, end
  *
  */
-/**
- * determine intervals,
- * when to clean setInterval
- *
- */
-
-export const timeListener = (
+//--------------------------------------4
+export const getIntervals = (
   currentTime: number,
   targetTime: number,
   interval?: number
 ): number => {
   const diffTime = targetTime - currentTime
   if (diffTime < 15 && diffTime > -15) {
-    // setInterval run every 1min
+    // setInterval run every 1min WHEN ct is +- 15tt
     return interval || 6
   } else if (diffTime < 60) {
-    // setInterval run every 10min
+    // setInterval run every 10min WHEN ct is 60min less than tt
     return interval || 600
   } else {
     // setInterval run every 1hour
     return interval || 6000
   }
 }
-
+//--------------------------------------5
 export const withTimeRangeForDishes = (
   currentTime: number,
   startTime: number,
@@ -101,4 +94,3 @@ export const withTimeRangeForDishes = (
     }
   }
 }
-// console.log(withTimeRangeForDishes(1040, 660, 1050))
