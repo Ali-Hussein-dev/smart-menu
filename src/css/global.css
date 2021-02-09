@@ -13,6 +13,9 @@
   .f-row {
     @apply flex items-center;
   }
+  .card-border {
+    @apply w-11/12 px-2 py-4 mx-auto text-lg font-semibold text-center border rounded-lg border-blueGray-300 text-blueGray-600;
+  }
 }
 @tailwind utilities;
 :root {
