@@ -1,4 +1,4 @@
-import { Avatar, Divider, HStack } from '@chakra-ui/react'
+import { Avatar, Divider, HStack, Image, Skeleton } from '@chakra-ui/react'
 import { CC } from './CC'
 import { SvgIcon } from './SvgIcon'
 interface Assests {
@@ -31,10 +31,11 @@ export const MenuTop: React.FC<{
     return (
       <div className="flex flex-col px-2 mb-3">
         <CC isTrue={assest.imgSrc}>
-          <img
+          <Image
+            borderRadius="md"
             src={assest.imgSrc}
             alt={header}
-            className="mx-auto mt-2 mb-2 rounded-lg"
+            fallback={<Skeleton height={'330px'} />}
           />
         </CC>
         <CC isTrue={header}>
@@ -52,9 +53,11 @@ export const MenuTop: React.FC<{
         <SvgIcon color="text-orange-700">{Component}</SvgIcon>
       </CC>
       <CC isTrue={assest.avatarSrc}>
-        <Avatar src={assest.avatarSrc} name="Cocktail" />
+        <Avatar src={assest.avatarSrc} name={header} />
       </CC>
-      <H className="text-sm font-semibold break-all text-blueGray-600">{header}</H>
+      <H className="text-sm font-semibold break-all text-blueGray-600">
+        {header}
+      </H>
     </HStack>
   )
 }

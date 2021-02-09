@@ -1,4 +1,5 @@
 import { GetDrinks, MenuTop } from '@/components/leaf-node'
+import { screen, waitFor } from '@testing-library/dom'
 import * as React from 'react'
 import { render } from '../testUtils'
 
@@ -17,14 +18,17 @@ describe('Menu Top: header & assest', () => {
     const svg = container.querySelector('svg')
     expect(svg).toBeVisible()
   })
-  test('expect a header & an avatar', () => {
-    const { container } = render(
+  test('expect a header & an avatar', async () => {
+    render(
       <MenuTop
         header="test header"
-        assest={{ avatarSrc: '/trude/mojito.jpg' }}
+        assest={{
+          avatarSrc:
+            'https://wodkablog.de/wp-content/uploads/wodka-longdrink-800x532.jpg',
+        }}
       />
     )
-    const svg = container.querySelector('svg')
-    expect(svg).toBeVisible()
+    const imgAlt = screen.findByAltText('test header')
+    waitFor(() => expect(imgAlt).toBeVisible())
   })
 })
