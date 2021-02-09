@@ -5,28 +5,39 @@
  * line 50
  */
 import * as React from 'react'
-import { concatenateHrsMin, withinTimeRange } from '../../utils/index'
+import {
+  concatenateHrsMin,
+  useInterval,
+  withinTimeRange,
+} from '../../utils/index'
 import { GetDrinks, SvgIcon } from '../leaf-node'
 import { Ctx } from '../../context'
 import { ImInfo } from 'react-icons/im'
+import dayjs from 'dayjs'
 
 //=======================
-const CocktailWrapper: React.FC<{ currentTime?: number }> = ({
-  currentTime,
-  children,
-}) => {
+const CocktailWrapper: React.FC = ({ children }) => {
   // hooks
+  //----------------------------
   const { state, dispatch } = React.useContext(Ctx)
   const { hh1, hh2, available } = state.meta.timeRanges.cocktail
-  React.useEffect(() => {
-    if (withinTimeRange(currentTime + 5, available.start, available.end)) {
+  const [currentTime, setCurrentTime] = React.useState(
+    dayjs().get('h') * 60 + dayjs().get('m')
+  )
+  useInterval(() => {
+    setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
+    if (withinTimeRange(currentTime + 10, available.start, available.end)) {
       dispatch({ type: 'onAvailable' })
       if (
         withinTimeRange(currentTime, hh1?.start, hh1?.end) ||
         withinTimeRange(currentTime, hh2?.start, hh2?.end)
       ) {
         dispatch({ type: 'onHH' })
+      } else {
+        dispatch({ type: 'offHH' })
       }
+    } else {
+      dispatch({ type: 'offAvailable' })
     }
   }, [currentTime])
   //--------------------------------------
@@ -34,7 +45,7 @@ const CocktailWrapper: React.FC<{ currentTime?: number }> = ({
   //--------------------------------------
   return (
     <div className="pb-4">
-      <div className="flex items-center justify-center w-11/12 px-4 py-4 mx-auto my-4 text-lg text-center border rounded-lg border-blueGray-300 text-blueGray-600 gap-x-5">
+      <div className="justify-center my-4 mb-6 f-row gap-x-5 card-border">
         <SvgIcon color="text-orange-700" size="w-20">
           <GetDrinks iconName={'cocktail'} />
         </SvgIcon>
@@ -62,9 +73,9 @@ const CocktailWrapper: React.FC<{ currentTime?: number }> = ({
           {children}
         </div>
       ) : (
-        <div className="w-11/12 px-2 py-4 mx-auto mt-4 text-lg font-semibold text-center text-gray-500 border rounded-lg border-blueGray-300">
+        <div className="card-border">
           <ImInfo size="25" className="mx-auto mb-2 text-amber-700" />
-          <h3 data-testid="cocktailMsg">
+          <h3 data-testid="cocktailMsg ">
             {state.meta.timeRanges.cocktail.cocktailOffMsg}
           </h3>
         </div>

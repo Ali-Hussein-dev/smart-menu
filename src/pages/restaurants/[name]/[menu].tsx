@@ -7,7 +7,6 @@ import Link from 'next/link'
 import { GetMenuType, LoadIndicator, SvgIcon } from '@/components/leaf-node'
 import Head from 'next/head'
 import CocktailWrapper from '@/components/drinks/CocktailWrapper'
-import dayjs from 'dayjs'
 
 const DrinksAccordion = dynamic(
   () => import('../../../components/drinks/DrinksAccordion'),
@@ -47,7 +46,6 @@ const ToggleMenu: React.FC<{ label: MenuType; name: string }> = ({
     </Link>
   )
 }
-
 //=======================
 const MenuPage: React.FC = () => {
   const { drinks, dishes } = MegaList[0].menu.de
@@ -81,9 +79,7 @@ const MenuPage: React.FC = () => {
             ) : (
               <div>
                 <DrinksAccordion drinks={drinks.drinks} />
-                <CocktailWrapper
-                  currentTime={dayjs().get('h') * 60 + dayjs().get('m')}
-                >
+                <CocktailWrapper>
                   <DrinksAccordion drinks={drinks.cocktail} />
                 </CocktailWrapper>
               </div>
