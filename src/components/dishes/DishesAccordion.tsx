@@ -8,11 +8,13 @@ import { DishItem } from './'
 import { CC, GetDishes, MenuTop, Price } from '../leaf-node'
 import * as React from 'react'
 import { Lunch } from './Lunch'
-import dayjs from 'dayjs'
 
 //=======================
 const DishesAccordion: React.FC<{
-  dishes: [Menu.Header, Menu.List<Menu.Item>][]
+  dishes: {
+    dishes: [Menu.Header, Menu.List<Menu.Item>][]
+    lunch: Menu.Item[]
+  }
 }> = ({ dishes: list }) => {
   // hooks
   //--------------------------------------
@@ -20,9 +22,9 @@ const DishesAccordion: React.FC<{
   //--------------------------------------
   return (
     <>
-      <Lunch currentTime={dayjs().get('h') * 60 + dayjs().get('m')} />
+      <Lunch items={list.lunch} />
       <Accordion allowToggle>
-        {list.map((o, i) => (
+        {list.dishes.map((o, i) => (
           <AccordionItem key={i}>
             <AccordionButton
               _focus={{ bg: 'gray.400', outline: 'none' }}

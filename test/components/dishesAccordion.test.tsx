@@ -6,7 +6,7 @@ import MegaList from '@/database/index'
 beforeAll(async () => {
   await preloadAll()
 })
-const list = MegaList[0].menu.de.dishes.dishes
+const list = MegaList[0].menu.de.dishes
 
 describe('DishesAccordion', () => {
   test('to have a header content', () => {
