@@ -10,7 +10,7 @@ export const softdrinks: [Menu.Header, Menu.List] = [
           header: '',
           sizeUnit: 'L',
           imgSrc:
-            'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zentrum-der-gesundheit.de%2Fnews%2Fernaehrung%2Fsoftdrinks-lassen-schneller-altern-100010&psig=AOvVaw3MlphasHgxbkXLw-ghgEq6&ust=1612647270300000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCFprjZ0-4CFQAAAAAdAAAAABAD',
+            'https://static.zentrum-der-gesundheit.de/img/cbeb1b386d07eb97f21c8ff81b7297ca?width=823&height=460',
         },
         {
           itemsList: [
