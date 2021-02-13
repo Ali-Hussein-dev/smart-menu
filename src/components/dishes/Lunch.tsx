@@ -21,9 +21,8 @@ export const Lunch: React.FC<{ items: Menu.Item[] }> = ({ items }) => {
   useInterval(() => {
     setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
     if (
-      lunch.unavailableDays.filter((num) => {
-        num === dayjs().get('d')
-      }).length === 1
+      lunch.unavailableDays.filter((num) => num === dayjs().get('d')).length ===
+      1
     ) {
       dispatch({ type: 'offLunch' })
     } else if (
