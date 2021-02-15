@@ -9,12 +9,9 @@ ngrok.exe
 
 # testing
 /coverage
-/database
-/public/trude
 # next.js
 /.next/
 /out/
-
 # production
 /build
 
@@ -36,3 +33,8 @@ yarn-error.log*
 # vercel
 .vercel
 ngrok.exe
+
+# temp
+/public/trude
+database/dishes/types.d.ts
+database/json/a.json
