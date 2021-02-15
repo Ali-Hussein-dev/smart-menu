@@ -1,7 +1,7 @@
 export * from './customHooks'
 import dayjs from 'dayjs'
 
-const validateTime = (time: number): Error | void => {
+export const validateTime = (time: number): Error | void => {
   if (time > 1440 || time < 0) {
     throw new Error('Time must be between 0-1440')
   }
@@ -31,16 +31,19 @@ export const convertNumToTimeFormat = (
   a: number,
   b: 'HH' | 'mm'
 ): string | Error => {
-  return b === 'mm' && (a > 60 || a < 0)
-    ? new Error('first Param must have value between 0-60 ')
-    : b === 'HH' && (a > 24 || a < 0)
-    ? new Error('first Param must have value between 0-24 ')
-    : b === 'mm'
+  if (b === 'mm' && (a > 60 || a < 0)) {
+    throw new Error('first Param must have value between 0-60')
+  } else if (b === 'HH' && (a > 24 || a < 0)) {
+    throw new Error('first Param must have value between 0-24')
+  }
+
+  return b === 'mm'
     ? dayjs().minute(a).format('mm')
     : b === 'HH'
     ? dayjs().hour(a).format('HH')
-    : new Error('Params are Invalid')
+    : null
 }
+
 //--------------------------------------3
 
 export const concatenateHrsMin = (time: Menu.Hour): string => {
@@ -52,10 +55,10 @@ export const concatenateHrsMin = (time: Menu.Hour): string => {
 }
 
 /**
- * Time listener for
- * toggling cocktail, lunch, hh, dish items
  *
- *
+ * @param currentTime client current time
+ * @param targetTime is when update should happen: e.x startTime, endTime
+ * @param interval determine intervals long of setInterval function based on how far currentTime away from targetTime
  */
 //--------------------------------------4
 export const getIntervals = (
