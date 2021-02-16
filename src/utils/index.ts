@@ -13,13 +13,13 @@ export const withinTimeRange = (
   endTime: number
 ): boolean => {
   validateTime(currentTime)
-  // Edge case: when endTime is less than startTime ex. 22:00-00:30
+  // Edge case: when endTime is less than startTime ex. 22:00-00:30 || 1320 - 30
   if (startTime > endTime) {
     if (currentTime >= startTime && currentTime <= 1440) {
-      return true
+      return true // case: cT: 22:30 
     } else if (currentTime < endTime) {
-      return true
-    } else return false
+      return true // case: cT: 00:10 
+    } else return false // case: cT: 00:40,21:00 
   }
   // normal case
   if (currentTime >= startTime && currentTime <= endTime) {
@@ -68,9 +68,9 @@ export const getInterval = (
       targetTime - currentTime < 15 && targetTime - currentTime > 0
   )[0]
   if (!currentTargetTime) {
-    return 60 * 60 // check every hour
+    return 60 * 15// check every 15mins
   } else {
-    return interval || 60 // check every minute
+    return interval || 1 // check every sec
   }
 }
 //--------------------------------------5

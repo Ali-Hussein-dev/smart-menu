@@ -1,21 +1,26 @@
 import * as React from 'react'
-
 //--------------------------------------1
 export const useInterval = (
   cb: (...arg) => any,
   deps: any[],
-  delay: number | null = 1
+  delay: number
 ): any[] => {
   const memoizedCB = React.useCallback(() => {
     cb()
   }, [cb])
+  let id1
   React.useEffect(() => {
-    function cbWrapper() {
+    const cbWrapper = () => {
       memoizedCB()
     }
-    if (delay !== null) {
-      const id = setInterval(cbWrapper, delay !== null ? delay * 1000 : delay)
-      return () => clearInterval(id)
+    // run once at least to update the ctx and the DOM if needed.
+    if (delay > 1) {
+      id1 = setTimeout(cbWrapper, 100)
+    }
+    const id2 = setInterval(cbWrapper, delay * 1000)
+    return () => {
+      clearTimeout(id1)
+      clearInterval(id2)
     }
   }, [...deps])
   return [...deps, cb]
