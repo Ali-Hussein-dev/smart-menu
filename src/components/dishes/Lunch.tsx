@@ -1,4 +1,9 @@
-import { concatenateHrsMin, useInterval, withinTimeRange } from 'src/utils'
+import {
+  concatenateHrsMin,
+  getInterval,
+  useInterval,
+  withinTimeRange,
+} from 'src/utils'
 import dayjs from 'dayjs'
 import { Ctx } from 'src/context'
 import * as React from 'react'
@@ -17,27 +22,32 @@ export const Lunch: React.FC<{ items: Menu.Item[] }> = ({ items }) => {
   const [currentTime, setCurrentTime] = React.useState(
     dayjs().get('h') * 60 + dayjs().get('m')
   )
+  const timeTargets = [lunch.start, lunch.end]
   //--------------------------------------
-  useInterval(() => {
-    setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
-    if (
-      lunch.unavailableDays.filter((num) => num === dayjs().get('d')).length ===
-      1
-    ) {
-      dispatch({ type: 'offLunch' })
-    } else if (
-      withinTimeRange(
-        currentTime,
-        //------------------make lunch available 3hrs earlier
-        lunch.start - 180,
-        lunch.end
-      )
-    ) {
-      dispatch({ type: 'onLunch' })
-    } else {
-      dispatch({ type: 'offLunch' })
-    }
-  }, [currentTime])
+  useInterval(
+    () => {
+      setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
+      if (
+        lunch.unavailableDays.filter((num) => num === dayjs().get('d'))
+          .length === 1
+      ) {
+        dispatch({ type: 'offLunch' })
+      } else if (
+        withinTimeRange(
+          currentTime,
+          //------------------make lunch available 3hrs earlier
+          lunch.start,
+          lunch.end
+        )
+      ) {
+        dispatch({ type: 'onLunch' })
+      } else {
+        dispatch({ type: 'offLunch' })
+      }
+    },
+    [currentTime],
+    getInterval(currentTime, timeTargets)
+  )
   //--------------------------------------
   switch (state.meta.isLunch) {
     case true:

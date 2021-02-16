@@ -8,6 +8,7 @@ import * as React from 'react'
 import {
   concatenateHrsMin,
   useInterval,
+  getInterval,
   withinTimeRange,
 } from '../../utils/index'
 import { GetDrinks, SvgIcon } from '../leaf-node'
@@ -24,22 +25,35 @@ const CocktailWrapper: React.FC = ({ children }) => {
   const [currentTime, setCurrentTime] = React.useState(
     dayjs().get('h') * 60 + dayjs().get('m')
   )
-  useInterval(() => {
-    setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
-    if (withinTimeRange(currentTime + 10, available.start, available.end)) {
-      dispatch({ type: 'onAvailable' })
-      if (
-        withinTimeRange(currentTime, hh1?.start, hh1?.end) ||
-        withinTimeRange(currentTime, hh2?.start, hh2?.end)
-      ) {
-        dispatch({ type: 'onHH' })
+
+  const timeTargets = [
+    hh1.start,
+    hh1.end,
+    hh2.start,
+    hh2.end,
+    available.start,
+    available.end,
+  ]
+  useInterval(
+    () => {
+      setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
+      if (withinTimeRange(currentTime + 0, available.start, available.end)) {
+        dispatch({ type: 'onAvailable' })
+        if (
+          withinTimeRange(currentTime, hh1?.start, hh1?.end) ||
+          withinTimeRange(currentTime, hh2?.start, hh2?.end)
+        ) {
+          dispatch({ type: 'onHH' })
+        } else {
+          dispatch({ type: 'offHH' })
+        }
       } else {
-        dispatch({ type: 'offHH' })
+        dispatch({ type: 'offAvailable' })
       }
-    } else {
-      dispatch({ type: 'offAvailable' })
-    }
-  }, [currentTime])
+    },
+    [currentTime],
+    getInterval(currentTime, timeTargets)
+  )
   //--------------------------------------
   // functions
   //--------------------------------------
