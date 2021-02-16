@@ -43,9 +43,7 @@ export const convertNumToTimeFormat = (
     ? dayjs().hour(a).format('HH')
     : null
 }
-
 //--------------------------------------3
-
 export const concatenateHrsMin = (time: Menu.Hour): string => {
   const { hrs, min } = time
   return `${convertNumToTimeFormat(hrs, 'HH')}:${convertNumToTimeFormat(
@@ -53,7 +51,6 @@ export const concatenateHrsMin = (time: Menu.Hour): string => {
     'mm'
   )}`
 }
-
 /**
  *
  * @param currentTime client current time
@@ -61,21 +58,19 @@ export const concatenateHrsMin = (time: Menu.Hour): string => {
  * @param interval determine intervals long of setInterval function based on how far currentTime away from targetTime
  */
 //--------------------------------------4
-export const getIntervals = (
+export const getInterval = (
   currentTime: number,
-  targetTime: number,
+  timeTargets: number[],
   interval?: number
 ): number => {
-  const diffTime = targetTime - currentTime
-  if (diffTime < 15 && diffTime > -15) {
-    // setInterval run every 1min WHEN ct is +- 15tt
-    return interval || 6
-  } else if (diffTime < 60) {
-    // setInterval run every 10min WHEN ct is 60min less than tt
-    return interval || 600
+  const currentTargetTime = timeTargets.filter(
+    (targetTime) =>
+      targetTime - currentTime < 15 && targetTime - currentTime > 0
+  )[0]
+  if (!currentTargetTime) {
+    return 60 * 60 // check every hour
   } else {
-    // setInterval run every 1hour
-    return interval || 6000
+    return interval || 60 // check every minute
   }
 }
 //--------------------------------------5

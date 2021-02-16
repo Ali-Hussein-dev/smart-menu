@@ -2,6 +2,7 @@ import {
   convertNumToTimeFormat,
   withinTimeRange,
   validateTime,
+  getInterval,
 } from '../../src/utils/index'
 //--------------------------------------withinTimeRange
 describe('withinTimeRange', () => {
@@ -87,3 +88,15 @@ describe('validateTime', () => {
   })
 })
 //--------------------------------------getIntervals
+describe('getInterval', () => {
+  let interval
+  const targets = [1020, 1140, 1350, 30]
+  test('Expect interval to be one hour', () => {
+    interval = getInterval(1000, targets)
+    expect(interval).toBe(3600)
+  })
+  test('Expect interval to be one minute', () => {
+    interval = getInterval(1340, targets)
+    expect(interval).toBe(60)
+  })
+})
