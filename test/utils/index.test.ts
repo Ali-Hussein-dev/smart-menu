@@ -16,6 +16,12 @@ describe('withinTimeRange', () => {
     currentTime = 1141
     finalValue = withinTimeRange(currentTime, startTime, endTime)
     expect(finalValue).toBe(false)
+    
+    startTime = 1350
+    endTime = 30
+    currentTime = 1349
+    finalValue = withinTimeRange(currentTime, startTime, endTime)
+    expect(finalValue).toBe(false)
   })
   test('expect true WHEN currentTime is within time range', () => {
     currentTime = 1020
@@ -37,6 +43,9 @@ describe('withinTimeRange', () => {
     currentTime = 20
     startTime = 1350
     endTime = 30
+    finalValue = withinTimeRange(currentTime, startTime, endTime)
+    expect(finalValue).toBe(true)
+    currentTime = 1351
     finalValue = withinTimeRange(currentTime, startTime, endTime)
     expect(finalValue).toBe(true)
   })
@@ -93,10 +102,10 @@ describe('getInterval', () => {
   const targets = [1020, 1140, 1350, 30]
   test('Expect interval to be one hour', () => {
     interval = getInterval(1000, targets)
-    expect(interval).toBe(3600)
+    expect(interval).toBe(900)
   })
   test('Expect interval to be one minute', () => {
     interval = getInterval(1340, targets)
-    expect(interval).toBe(60)
+    expect(interval).toBe(1)
   })
 })
