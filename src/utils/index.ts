@@ -13,13 +13,13 @@ export const withinTimeRange = (
   endTime: number
 ): boolean => {
   validateTime(currentTime)
-  // Edge case: when endTime is less than startTime ex. 22:00-00:30
+  // Edge case: when endTime is less than startTime ex. 22:00-00:30 || 1320 - 30
   if (startTime > endTime) {
     if (currentTime >= startTime && currentTime <= 1440) {
-      return true
+      return true // case: cT: 22:30 
     } else if (currentTime < endTime) {
-      return true
-    } else return false
+      return true // case: cT: 00:10 
+    } else return false // case: cT: 00:40,21:00 
   }
   // normal case
   if (currentTime >= startTime && currentTime <= endTime) {
@@ -43,9 +43,7 @@ export const convertNumToTimeFormat = (
     ? dayjs().hour(a).format('HH')
     : null
 }
-
 //--------------------------------------3
-
 export const concatenateHrsMin = (time: Menu.Hour): string => {
   const { hrs, min } = time
   return `${convertNumToTimeFormat(hrs, 'HH')}:${convertNumToTimeFormat(
@@ -53,7 +51,6 @@ export const concatenateHrsMin = (time: Menu.Hour): string => {
     'mm'
   )}`
 }
-
 /**
  *
  * @param currentTime client current time
@@ -61,21 +58,19 @@ export const concatenateHrsMin = (time: Menu.Hour): string => {
  * @param interval determine intervals long of setInterval function based on how far currentTime away from targetTime
  */
 //--------------------------------------4
-export const getIntervals = (
+export const getInterval = (
   currentTime: number,
-  targetTime: number,
+  timeTargets: number[],
   interval?: number
 ): number => {
-  const diffTime = targetTime - currentTime
-  if (diffTime < 15 && diffTime > -15) {
-    // setInterval run every 1min WHEN ct is +- 15tt
-    return interval || 6
-  } else if (diffTime < 60) {
-    // setInterval run every 10min WHEN ct is 60min less than tt
-    return interval || 600
+  const currentTargetTime = timeTargets.filter(
+    (targetTime) =>
+      targetTime - currentTime < 15 && targetTime - currentTime > 0
+  )[0]
+  if (!currentTargetTime) {
+    return 60 * 15// check every 15mins
   } else {
-    // setInterval run every 1hour
-    return interval || 6000
+    return interval || 5 // check every sec
   }
 }
 //--------------------------------------5
