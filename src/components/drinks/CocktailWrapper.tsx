@@ -1,8 +1,6 @@
 /**
  * Todo internationalization
- *  lines 56
- * Todo refactor
- * line 50
+ *  lines 85
  */
 import * as React from 'react'
 import {
@@ -37,7 +35,8 @@ const CocktailWrapper: React.FC = ({ children }) => {
   useInterval(
     () => {
       setCurrentTime(dayjs().get('h') * 60 + dayjs().get('m'))
-      if (withinTimeRange(currentTime + 0, available.start, available.end)) {
+      // -----------------------------'- 10' makes cocktail menu 10mins earlier
+      if (withinTimeRange(currentTime, available.start - 10, available.end)) {
         dispatch({ type: 'onAvailable' })
         if (
           withinTimeRange(currentTime, hh1?.start, hh1?.end) ||
