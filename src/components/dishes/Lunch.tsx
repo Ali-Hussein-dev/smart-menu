@@ -1,3 +1,7 @@
+/**
+ * Todo internationalization
+ *  lines 82
+ */
 import {
   concatenateHrsMin,
   getInterval,
@@ -18,7 +22,6 @@ export const Lunch: React.FC<{ items: Menu.Item[] }> = ({ items }) => {
   // hooks
   const { state, dispatch } = React.useContext(Ctx)
   const { lunch } = state.meta.timeRanges
-
   const [currentTime, setCurrentTime] = React.useState(
     dayjs().get('h') * 60 + dayjs().get('m')
   )
@@ -36,8 +39,9 @@ export const Lunch: React.FC<{ items: Menu.Item[] }> = ({ items }) => {
         withinTimeRange(
           currentTime,
           //------------------make lunch available 3hrs earlier
-          lunch.start,
-          lunch.end
+          lunch.start - 180,
+          //------------------there is one min delay
+          lunch.end - 1
         )
       ) {
         dispatch({ type: 'onLunch' })
@@ -62,20 +66,20 @@ export const Lunch: React.FC<{ items: Menu.Item[] }> = ({ items }) => {
               </SwiperSlide>
             ))}
           </SlidersContainer>
-          <h2 className="mt-2 font-bold pl-9 text-blueGray-600">
+          <h2 className="pl-8 mt-2 font-bold text-blueGray-600">
             Mittagessen Zeit
           </h2>
           <div className="pl-2 mb-3 text-blueGray-400">
-            <span className="f-row gap-x-2">
+            <span className="f-row gap-x-1">
               <MdAccessTime size="20" />
               <span>
-                {concatenateHrsMin(lunch.longStart)} -{' '}
+                {concatenateHrsMin(lunch.longStart)}-
                 {concatenateHrsMin(lunch.longEnd)} | Montag bis Freitag
               </span>
             </span>
-            <span className="f-row gap-x-2">
+            <span className="f-row gap-x-1">
               <MdDateRange size="20" />
-              <span>12.3.2021 - 20.3.2021</span>
+              <span>12.3.2021-20.3.2021</span>
             </span>
           </div>
         </section>
