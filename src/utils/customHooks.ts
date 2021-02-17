@@ -14,7 +14,7 @@ export const useInterval = (
       memoizedCB()
     }
     // run once at least to update the ctx and the DOM if needed.
-    if (delay > 1) {
+    if (delay > 5) {
       id1 = setTimeout(cbWrapper, 100)
     }
     const id2 = setInterval(cbWrapper, delay * 1000)

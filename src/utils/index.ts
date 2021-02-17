@@ -70,7 +70,7 @@ export const getInterval = (
   if (!currentTargetTime) {
     return 60 * 15// check every 15mins
   } else {
-    return interval || 1 // check every sec
+    return interval || 5 // check every sec
   }
 }
 //--------------------------------------5
