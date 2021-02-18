@@ -16,7 +16,7 @@ describe('withinTimeRange', () => {
     currentTime = 1141
     finalValue = withinTimeRange(currentTime, startTime, endTime)
     expect(finalValue).toBe(false)
-    
+
     startTime = 1350
     endTime = 30
     currentTime = 1349
@@ -100,12 +100,12 @@ describe('validateTime', () => {
 describe('getInterval', () => {
   let interval
   const targets = [1020, 1140, 1350, 30]
-  test('Expect interval to be one hour', () => {
+  test('Expect interval to be 15 mins WHEN time diff is greater than 15mins', () => {
     interval = getInterval(1000, targets)
     expect(interval).toBe(900)
   })
-  test('Expect interval to be one minute', () => {
+  test('Expect interval to be 5 secs WHEN time diff is less than 15mins', () => {
     interval = getInterval(1340, targets)
-    expect(interval).toBe(1)
+    expect(interval).toBe(5)
   })
 })
