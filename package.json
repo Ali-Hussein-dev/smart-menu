@@ -40,7 +40,7 @@
     "react-icons": "^4.1.0",
     "react-lottie": "^1.2.3",
     "sass": "^1.32.5",
-    "swiper": "^6.4.10"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.29.0",
